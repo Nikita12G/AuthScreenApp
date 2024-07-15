@@ -35,6 +35,9 @@ struct AuthInputCodeContentView: View {
                 AuthInputCodeTextField(code: $inputCode, inputState: $inputState)
                     .padding(EdgeInsets(top: 24, leading: 24, bottom: 12, trailing: 24))
                     .focused($textFieldIsFocused)
+                    .onChange(of: inputCode) { _ in
+                        inputState = .regular
+                    }
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                             self.textFieldIsFocused = true
