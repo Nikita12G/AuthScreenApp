@@ -34,6 +34,9 @@ struct AuthInputPhoneContentView: View {
             
             AuthInputPhoneView(phoneNumber: $phoneNumber, inputState: $inputState)
                 .padding(EdgeInsets(top: 0, leading: 24, bottom: 24, trailing: 24))
+                .onChange(of: phoneNumber) { _, _ in
+                    inputState = .regular
+                }
             
             Button {
                 if phoneIsValid(phone: phoneNumber) {

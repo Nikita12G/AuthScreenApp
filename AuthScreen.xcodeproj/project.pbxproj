@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */; };
 		A1DEE6E92C4505200003733B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6D62C45051F0003733B /* Helpers.swift */; };
-		A1DEE6EA2C4505200003733B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6D82C45051F0003733B /* Preview Assets.xcassets */; };
-		A1DEE6EB2C4505200003733B /* InputViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DA2C45051F0003733B /* InputViewState.swift */; };
 		A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */; };
 		A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DE2C4505200003733B /* AuthInputPhoneContentView.swift */; };
 		A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DF2C4505200003733B /* AuthInputPhoneTextField.swift */; };
@@ -21,14 +19,13 @@
 		A1DEE6F32C4505200003733B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E52C4505200003733B /* Fonts.swift */; };
 		A1DEE6F42C4505200003733B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E62C4505200003733B /* Colors.swift */; };
 		A1DEE6F52C4505200003733B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E82C4505200003733B /* Extensions.swift */; };
+		A1E22C052C59257100D3BA9C /* InputViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E22C042C59257100D3BA9C /* InputViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1DEE6A62C45034B0003733B /* AuthScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1DEE6D62C45051F0003733B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		A1DEE6D82C45051F0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1DEE6DA2C45051F0003733B /* InputViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewState.swift; sourceTree = "<group>"; };
 		A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreenApp.swift; sourceTree = "<group>"; };
 		A1DEE6DE2C4505200003733B /* AuthInputPhoneContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputPhoneContentView.swift; sourceTree = "<group>"; };
 		A1DEE6DF2C4505200003733B /* AuthInputPhoneTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputPhoneTextField.swift; sourceTree = "<group>"; };
@@ -39,6 +36,7 @@
 		A1DEE6E52C4505200003733B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		A1DEE6E62C4505200003733B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A1DEE6E82C4505200003733B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A1E22C042C59257100D3BA9C /* InputViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +72,7 @@
 				A1DEE6DB2C4505200003733B /* Auth */,
 				A1DEE6E72C4505200003733B /* Exstentions */,
 				A1DEE6D52C45051F0003733B /* Helpers */,
-				A1DEE6D92C45051F0003733B /* Models */,
-				A1DEE6D72C45051F0003733B /* Preview Content */,
+				A1E22C032C59255A00D3BA9C /* Models */,
 				A1DEE6E32C4505200003733B /* Style */,
 				A1DEE6AF2C45034C0003733B /* Preview Content */,
 			);
@@ -96,24 +93,6 @@
 				A1DEE6D62C45051F0003733B /* Helpers.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		A1DEE6D72C45051F0003733B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A1DEE6D82C45051F0003733B /* Preview Assets.xcassets */,
-			);
-			name = "Preview Content";
-			path = "../../Pp/Ex/AuthScreenApp/AuthScreenApp/Preview Content";
-			sourceTree = "<group>";
-		};
-		A1DEE6D92C45051F0003733B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A1DEE6DA2C45051F0003733B /* InputViewState.swift */,
-			);
-			name = Models;
-			path = ../../Pp/Ex/AuthScreenApp/AuthScreenApp/Models;
 			sourceTree = "<group>";
 		};
 		A1DEE6DB2C4505200003733B /* Auth */ = {
@@ -153,6 +132,15 @@
 				A1DEE6E82C4505200003733B /* Extensions.swift */,
 			);
 			path = Exstentions;
+			sourceTree = "<group>";
+		};
+		A1E22C032C59255A00D3BA9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1E22C042C59257100D3BA9C /* InputViewState.swift */,
+			);
+			name = Models;
+			path = Style/Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +201,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DEE6EA2C4505200003733B /* Preview Assets.xcassets in Resources */,
 				A1DEE6F22C4505200003733B /* Assets.xcassets in Resources */,
 				A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */,
 			);
@@ -230,13 +217,13 @@
 				A1DEE6F42C4505200003733B /* Colors.swift in Sources */,
 				A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */,
 				A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */,
+				A1E22C052C59257100D3BA9C /* InputViewState.swift in Sources */,
 				A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */,
 				A1DEE6F12C4505200003733B /* AuthGradientView.swift in Sources */,
 				A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */,
 				A1DEE6E92C4505200003733B /* Helpers.swift in Sources */,
 				A1DEE6F32C4505200003733B /* Fonts.swift in Sources */,
 				A1DEE6F52C4505200003733B /* Extensions.swift in Sources */,
-				A1DEE6EB2C4505200003733B /* InputViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +365,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +395,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
