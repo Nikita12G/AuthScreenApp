@@ -20,6 +20,7 @@
 		A1DEE6F42C4505200003733B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E62C4505200003733B /* Colors.swift */; };
 		A1DEE6F52C4505200003733B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E82C4505200003733B /* Extensions.swift */; };
 		A1E22C052C59257100D3BA9C /* InputViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E22C042C59257100D3BA9C /* InputViewState.swift */; };
+		A1E22C082C592A0D00D3BA9C /* MainLeftBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E22C072C592A0D00D3BA9C /* MainLeftBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A1DEE6E62C4505200003733B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A1DEE6E82C4505200003733B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A1E22C042C59257100D3BA9C /* InputViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewState.swift; sourceTree = "<group>"; };
+		A1E22C072C592A0D00D3BA9C /* MainLeftBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLeftBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				A1DEE6DB2C4505200003733B /* Auth */,
+				A1E22C062C5929EA00D3BA9C /* Main */,
 				A1DEE6E72C4505200003733B /* Exstentions */,
 				A1DEE6D52C45051F0003733B /* Helpers */,
 				A1E22C032C59255A00D3BA9C /* Models */,
@@ -141,6 +144,15 @@
 			);
 			name = Models;
 			path = Style/Models;
+			sourceTree = "<group>";
+		};
+		A1E22C062C5929EA00D3BA9C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A1E22C072C592A0D00D3BA9C /* MainLeftBarView.swift */,
+			);
+			name = Main;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +230,7 @@
 				A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */,
 				A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */,
 				A1E22C052C59257100D3BA9C /* InputViewState.swift in Sources */,
+				A1E22C082C592A0D00D3BA9C /* MainLeftBarView.swift in Sources */,
 				A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */,
 				A1DEE6F12C4505200003733B /* AuthGradientView.swift in Sources */,
 				A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */,

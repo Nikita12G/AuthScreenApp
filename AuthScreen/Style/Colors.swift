@@ -14,11 +14,11 @@ enum Colors {
     }
     
     static var PurpleFirstGradient: Color {
-        Color(r: 29, g: 6, b: 40)
+        Color(r: 29, g: 6, b: 40, o: 94)
     }
     
     static var PurpleSecondGradient: Color {
-        Color(r: 15, g: 10, b: 35)
+        Color(r: 15, g: 10, b: 35, o: 49)
     }
     
     static var White: Color {
@@ -41,6 +41,15 @@ extension Color {
             red: Double(r) / 255.0,
             green: Double(g) / 255.0,
             blue: Double(b) / 255.0
+        )
+    }
+    
+    init(r: Int, g: Int, b: Int, o: Double) {
+        self.init(
+            red: Double(r) / 255.0,
+            green: Double(g) / 255.0,
+            blue: Double(b) / 255.0,
+            opacity: o / 255.0
         )
     }
 }
