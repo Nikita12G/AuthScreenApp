@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1512E592C5A683000860F0C /* LocalizableRU.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1512E5B2C5A683000860F0C /* LocalizableRU.strings */; };
-		A1512E5E2C5A684100860F0C /* LocalizableEN.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1512E602C5A684100860F0C /* LocalizableEN.strings */; };
 		A1512E622C5A6B0000860F0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E612C5A6B0000860F0C /* Constants.swift */; };
+		A1512E722C5A81EA00860F0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1512E742C5A81EA00860F0C /* Localizable.strings */; };
 		A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */; };
 		A1DEE6E92C4505200003733B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6D62C45051F0003733B /* Helpers.swift */; };
 		A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */; };
@@ -27,9 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1512E5A2C5A683000860F0C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LocalizableRU.strings; sourceTree = "<group>"; };
-		A1512E5F2C5A684100860F0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableEN.strings; sourceTree = "<group>"; };
 		A1512E612C5A6B0000860F0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1512E732C5A81EA00860F0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A1512E762C5A825200860F0C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A1DEE6A62C45034B0003733B /* AuthScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1DEE6D62C45051F0003733B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -132,8 +131,7 @@
 				A1DEE6E42C4505200003733B /* Assets.xcassets */,
 				A1DEE6E52C4505200003733B /* Fonts.swift */,
 				A1DEE6E62C4505200003733B /* Colors.swift */,
-				A1512E5B2C5A683000860F0C /* LocalizableRU.strings */,
-				A1512E602C5A684100860F0C /* LocalizableEN.strings */,
+				A1512E742C5A81EA00860F0C /* Localizable.strings */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -223,9 +221,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1512E592C5A683000860F0C /* LocalizableRU.strings in Resources */,
+				A1512E722C5A81EA00860F0C /* Localizable.strings in Resources */,
 				A1DEE6F22C4505200003733B /* Assets.xcassets in Resources */,
-				A1512E5E2C5A684100860F0C /* LocalizableEN.strings in Resources */,
 				A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,20 +253,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A1512E5B2C5A683000860F0C /* LocalizableRU.strings */ = {
+		A1512E742C5A81EA00860F0C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A1512E5A2C5A683000860F0C /* ru */,
+				A1512E732C5A81EA00860F0C /* en */,
+				A1512E762C5A825200860F0C /* ru */,
 			);
-			name = LocalizableRU.strings;
-			sourceTree = "<group>";
-		};
-		A1512E602C5A684100860F0C /* LocalizableEN.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A1512E5F2C5A684100860F0C /* en */,
-			);
-			name = LocalizableEN.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
