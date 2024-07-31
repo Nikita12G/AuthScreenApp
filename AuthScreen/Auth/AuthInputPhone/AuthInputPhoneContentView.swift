@@ -19,7 +19,7 @@ struct AuthInputPhoneContentView: View {
     
     var body: some View {
         VStack {
-            Text("Авторизация")
+            Text(Constants.authorisationTitle)
                 .font(Fonts.montserrat(ofSize: 24))
                 .foregroundColor(Colors.White)
                 .bold()
@@ -27,7 +27,7 @@ struct AuthInputPhoneContentView: View {
             
             Image("UserAvatar")
             
-            Text("Вход по номеру телефона")
+            Text(Constants.authorisationSubtitle)
                 .font(Fonts.montserrat(ofSize: 24))
                 .foregroundColor(Colors.White)
                 .padding(EdgeInsets(top: 16, leading: 0, bottom: 32, trailing: 0))
@@ -45,7 +45,7 @@ struct AuthInputPhoneContentView: View {
                     inputState = .error
                 }
             } label: {
-                Text("Запросить код")
+                Text(Constants.authorisationRequestTitle)
                     .padding(14)
             }
             .frame(maxWidth: .infinity)

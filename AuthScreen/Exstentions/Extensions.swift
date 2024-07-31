@@ -33,7 +33,7 @@ extension String {
     func formatPhoneNumber() -> String {
         var cleanNumber = components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
         
-        let mask = "+X (XXX) XXX-XX-XX"
+        let mask = Constants.authorisationPhoneFormat
         
         let cleanNumberWithoutFirstCharacter = cleanNumber.dropFirst()
         if let firstCharacter = cleanNumber.first, String(firstCharacter) != "7" {

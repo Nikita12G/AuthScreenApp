@@ -21,7 +21,7 @@ struct AuthInputPhoneView: View {
         VStack {
             VStack(alignment: .leading) {
                 if inputState == .error {
-                    Text("Некорректный формат номера")
+                    Text(Constants.authorisationErrorStateTitle)
                         .font(Fonts.montserrat(ofSize: 12))
                         .foregroundColor(Colors.Red)
                         .hidden(inputState == .regular)

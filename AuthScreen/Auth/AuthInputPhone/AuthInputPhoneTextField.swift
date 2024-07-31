@@ -11,7 +11,7 @@ struct AuthInputPhoneTextField: View {
     
     @Binding private var text: String
     @State private var phoneNumber: String = ""
-    @State private var phoneMask = "+7 (___) ___-__-__"
+    @State private var phoneMask = Constants.authorisationPhoneMask
     
     
     init(text: Binding<String>) {
