@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 enum Constants {
     static let
     authorisationTitle = NSLocalizedString("authorisation.title", comment: ""),
