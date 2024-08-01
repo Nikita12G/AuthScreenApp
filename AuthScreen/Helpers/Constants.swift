@@ -16,5 +16,7 @@ enum Constants {
     authorisationErrorStateTitle = NSLocalizedString("authorisation.errorStateTitle", comment: ""),
     authorisationPhoneFormat = NSLocalizedString("authorisation.phoneFormat", comment: ""),
 
-    fontsMontserrat = NSLocalizedString("fonts.montserrat", comment: "")
+    fontsMontserrat = NSLocalizedString("fonts.montserrat", comment: ""),
+    
+    mainMovingTendTitle = NSLocalizedString("main.movingTrendTitle", comment: "")
 }

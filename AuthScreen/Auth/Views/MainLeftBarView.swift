@@ -9,11 +9,11 @@ import SwiftUI
 
 struct MainLeftBarView: View {
     var body: some View {
-        VStack {
+        VStack() {
             Button {
                 
             } label: {
-                Image("UserAvatar").frame(width: 448, height: 44)
+                Image("UserAvatar").frame(width: 80, height: 44)
             }.padding(EdgeInsets(top: 32, leading: 18, bottom: 0, trailing: 18))
             Spacer()
             Button {

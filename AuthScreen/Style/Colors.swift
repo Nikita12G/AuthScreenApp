@@ -33,6 +33,14 @@ enum Colors {
         Color(r: 1, g: 181, b: 116)
     }
     
+    static var Blue: Color {
+        Color(r: 35, g: 70, b: 255)
+    }
+    
+    static var Grey: Color {
+        Color(r: 160, g: 174, b: 192)
+    }
+    
 }
 
 extension Color {
