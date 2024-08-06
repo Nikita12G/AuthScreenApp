@@ -15,7 +15,8 @@ struct AuthScreenApp: App {
     var body: some Scene {
         WindowGroup {
             //AuthInputPhoneContentView(phoneNumber: $phoneNumber).applyBackground()
-            MainTrendsView()
+            //MainTrendsView()
+            MainMonthStatisticView()
         }
     }
 }
