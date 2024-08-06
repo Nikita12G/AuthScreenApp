@@ -13,6 +13,9 @@
 		A1512E782C5A8B3100860F0C /* MainTrendProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E772C5A8B3100860F0C /* MainTrendProgressView.swift */; };
 		A1512E942C5BDA0100860F0C /* MainTrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E932C5BDA0100860F0C /* MainTrendsView.swift */; };
 		A163B58B2C5BDB4D007C44E0 /* Trends.swift in Sources */ = {isa = PBXBuildFile; fileRef = A163B58A2C5BDB4D007C44E0 /* Trends.swift */; };
+		A16966142C625CB900E0470B /* MainContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16966132C625CB900E0470B /* MainContactView.swift */; };
+		A16966162C62631300E0470B /* MainContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16966152C62631300E0470B /* MainContactsListView.swift */; };
+		A16966182C62635500E0470B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16966172C62635500E0470B /* Contact.swift */; };
 		A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */; };
 		A1DEE6E92C4505200003733B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6D62C45051F0003733B /* Helpers.swift */; };
 		A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */; };
@@ -40,6 +43,9 @@
 		A1512E772C5A8B3100860F0C /* MainTrendProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTrendProgressView.swift; sourceTree = "<group>"; };
 		A1512E932C5BDA0100860F0C /* MainTrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTrendsView.swift; sourceTree = "<group>"; };
 		A163B58A2C5BDB4D007C44E0 /* Trends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trends.swift; sourceTree = "<group>"; };
+		A16966132C625CB900E0470B /* MainContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactView.swift; sourceTree = "<group>"; };
+		A16966152C62631300E0470B /* MainContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactsListView.swift; sourceTree = "<group>"; };
+		A16966172C62635500E0470B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		A1DEE6A62C45034B0003733B /* AuthScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1DEE6D62C45051F0003733B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -79,6 +85,8 @@
 				A1512E932C5BDA0100860F0C /* MainTrendsView.swift */,
 				A1EC2AE62C5D02F200014EA4 /* MainChartView.swift */,
 				A1EC2AE82C5D11E000014EA4 /* MainMonthStatisticView.swift */,
+				A16966132C625CB900E0470B /* MainContactView.swift */,
+				A16966152C62631300E0470B /* MainContactsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +96,7 @@
 			children = (
 				A163B58A2C5BDB4D007C44E0 /* Trends.swift */,
 				A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */,
+				A16966172C62635500E0470B /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,12 +284,14 @@
 				A1DEE6F42C4505200003733B /* Colors.swift in Sources */,
 				A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */,
 				A1512E942C5BDA0100860F0C /* MainTrendsView.swift in Sources */,
+				A16966182C62635500E0470B /* Contact.swift in Sources */,
 				A1512E782C5A8B3100860F0C /* MainTrendProgressView.swift in Sources */,
 				A1512E662C5A7C9600860F0C /* MainContentView.swift in Sources */,
 				A1EC2AE92C5D11E000014EA4 /* MainMonthStatisticView.swift in Sources */,
 				A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */,
 				A1E22C052C59257100D3BA9C /* InputViewState.swift in Sources */,
 				A163B58B2C5BDB4D007C44E0 /* Trends.swift in Sources */,
+				A16966142C625CB900E0470B /* MainContactView.swift in Sources */,
 				A1E22C082C592A0D00D3BA9C /* MainLeftBarView.swift in Sources */,
 				A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */,
 				A1DEE6F12C4505200003733B /* AuthGradientView.swift in Sources */,
@@ -290,6 +301,7 @@
 				A1DEE6F32C4505200003733B /* Fonts.swift in Sources */,
 				A1EC2AEB2C5D125900014EA4 /* MonthStatistic.swift in Sources */,
 				A1DEE6F52C4505200003733B /* Extensions.swift in Sources */,
+				A16966162C62631300E0470B /* MainContactsListView.swift in Sources */,
 				A1512E622C5A6B0000860F0C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
