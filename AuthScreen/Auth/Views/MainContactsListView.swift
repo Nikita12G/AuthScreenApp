@@ -19,12 +19,16 @@ struct MainContactsListView: View {
     
     var body: some View {
         ScrollView {
+            Text(Constants.contactsTitle)
+                .font(Fonts.montserrat(ofSize: 16))
+                .foregroundStyle(Colors.White)
+                .padding(.bottom, 12)
             ForEach(dataSource) { dataSource in
                 VStack(alignment: .leading) {
                     MainContactView(title: dataSource.fullName, subTitle: dataSource.mobileOperator, imageName: dataSource.avatar).frame(width: 260, height: 60)
                 }
             }
-        }.applyBackground()
+        }
     }
 }
 

@@ -9,27 +9,26 @@ import SwiftUI
 
 struct MainMonthStatisticView: View {
     
-    let dataSource = [
-        MonthStatistic(title: "Цена", value: 869, totalValue: 1000, valueType: "$", imageName: "wallet"),
-        MonthStatistic(title: "Клик", value: 24, totalValue: 100, valueType: "%", imageName: "roket"),
-        MonthStatistic(title: "Покупки", value: 22300, totalValue: 100000, valueType: nil, imageName: "shoppingBag"),
-        MonthStatistic(title: "Цена", value: 1.2, totalValue: 100, valueType: "%", imageName: "wrench")
-    ]
+    private let monthStatistic: [MonthStatistic]
+    
+    init(monthStatistic: [MonthStatistic]) {
+        self.monthStatistic = monthStatistic
+    }
     
     var body: some View {
         let columns = [
-            GridItem(.fixed(150)),
-            GridItem(.fixed(150))
+            GridItem(.flexible()),
+            GridItem(.flexible())
         ]
         
-        LazyVGrid(columns: columns) {
-            ForEach(dataSource) { dataSource in
-                    MainChartView(imageName: dataSource.imageName, progress: dataSource.progress, title: dataSource.title, value: "\(dataSource.value)")
+        LazyVGrid(columns: columns, alignment: .leading) {
+            ForEach(monthStatistic) { dataSource in
+                MainChartView(imageName: dataSource.imageName, progress: dataSource.progress, title: dataSource.title, value: "\(dataSource.value)")
             }
-        }.applyBackground()
+        }.frame(maxWidth: 300)
     }
 }
 
 #Preview {
-    MainMonthStatisticView()
+    MainContentView()
 }

@@ -13,6 +13,10 @@ enum Colors {
         Color(r: 132, g: 0, b: 255)
     }
     
+    static var DarkPurple: Color {
+        Color(r: 30, g: 5, b: 55)
+    }
+    
     static var PurpleFirstGradient: Color {
         Color(r: 29, g: 6, b: 40, o: 94)
     }

@@ -31,7 +31,7 @@ struct MainChartView: View {
                         .opacity(0.08), lineWidth: lineWidth)
                     .frame(width: ringRadius * 2.0)
                 Circle()
-                    .trim(from: 0, to: CGFloat(self.progress))
+                    .trim(from: 0, to: CGFloat(progress))
                     .stroke(Colors.Purple,
                         style: StrokeStyle(lineWidth: lineWidth, lineCap: .round))
                     .rotationEffect(Angle(degrees: 30))
@@ -53,5 +53,5 @@ struct MainChartView: View {
 }
 
 #Preview {
-    MainMonthStatisticView()
+    MainContentView()
 }
