@@ -39,5 +39,5 @@ struct MainContactView: View {
 }
 
 #Preview {
-    MainContactsListView()
+    MainContactsListView(isDetailList: true)
 }

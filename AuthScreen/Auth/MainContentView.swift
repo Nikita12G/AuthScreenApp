@@ -22,13 +22,14 @@ struct MainContentView: View {
                         Text("\(Constants.monthTitle) \(selectedMonth)").tag(selectedMonth)
                     }
                 }
+                MainContactsListView(isDetailList: true)
                 Spacer()
                 VStack(alignment: .center) {
                     MainTrendsView(trends: statistic.getTrend(for: monthSelected))
                         .padding(EdgeInsets(top: 36, leading: 19, bottom: 20, trailing: 19))
                     MainMonthStatisticView(monthStatistic: statistic.getStatistics(for: monthSelected))
                         .padding(EdgeInsets(top: 0, leading: 40, bottom: 16, trailing: 0))
-                    MainContactsListView()
+                    MainContactsListView(isDetailList: false)
                         .padding(EdgeInsets(top: 20, leading: 20, bottom: 16, trailing: 0))
                 }.background(AuthGradientView())
                     .clipShape(RoundedCorners(topLeft: 44, bottomLeft: 44))

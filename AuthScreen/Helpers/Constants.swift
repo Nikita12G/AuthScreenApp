@@ -19,6 +19,11 @@ enum Constants {
     fontsMontserrat = NSLocalizedString("fonts.montserrat", comment: ""),
     
     mainMovingTendTitle = NSLocalizedString("main.movingTrendTitle", comment: ""),
+    monthTitle = NSLocalizedString("main.month", comment: ""),
+    
+    marketingManagersTitle = NSLocalizedString("main.marketingManagersTitle", comment: ""),
+    
     contactsTitle = NSLocalizedString("main.contactsTitle", comment: ""),
-    monthTitle = NSLocalizedString("main.month", comment: "")
+    contactListSailsProgress = NSLocalizedString("main.contactListSailsProgress", comment: ""),
+    contactListSailsComplete = NSLocalizedString("main.contactListSailsComplete", comment: "")
 }

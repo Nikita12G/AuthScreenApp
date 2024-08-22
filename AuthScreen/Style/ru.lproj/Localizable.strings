@@ -17,3 +17,7 @@
 "main.movingTrendTitle" = "Движение тренда в 2024";
 "main.contactsTitle" = "Данные для связи";
 "main.month" = "Месяц";
+"main.marketingManagersTitle" = "Маркетинговые специалисты";
+"main.contactListSailsProgress" = "Выполнено продаж: ";
+"main.contactListSailsComplete" = "Выполнено";
+

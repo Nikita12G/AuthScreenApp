@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11C79CF2C74AB960092CFEE /* MainContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */; };
 		A1512E622C5A6B0000860F0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E612C5A6B0000860F0C /* Constants.swift */; };
 		A1512E662C5A7C9600860F0C /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E652C5A7C9600860F0C /* MainContentView.swift */; };
 		A1512E722C5A81EA00860F0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1512E742C5A81EA00860F0C /* Localizable.strings */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactDetailView.swift; sourceTree = "<group>"; };
 		A1512E612C5A6B0000860F0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1512E652C5A7C9600860F0C /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		A1512E732C5A81EA00860F0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				A1EC2AE82C5D11E000014EA4 /* MainMonthStatisticView.swift */,
 				A16966132C625CB900E0470B /* MainContactView.swift */,
 				A16966152C62631300E0470B /* MainContactsListView.swift */,
+				A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */,
 				A1F9120A2C65068500D7CFC7 /* TrendProvider.swift in Sources */,
 				A1DEE6F12C4505200003733B /* AuthGradientView.swift in Sources */,
+				A11C79CF2C74AB960092CFEE /* MainContactDetailView.swift in Sources */,
 				A1EC2AE72C5D02F200014EA4 /* MainChartView.swift in Sources */,
 				A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */,
 				A1DEE6E92C4505200003733B /* Helpers.swift in Sources */,
