@@ -56,3 +56,18 @@ extension String {
         return result
     }
 }
+
+extension Date {
+    init(year: Int, month: Int) {
+        var dateComponents = DateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        
+        let calendar = Calendar.current
+        if let date = calendar.date(from: dateComponents) {
+            self = date
+        } else {
+            self = Date()
+        }
+    }
+}

@@ -18,6 +18,7 @@
 		A16966142C625CB900E0470B /* MainContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16966132C625CB900E0470B /* MainContactView.swift */; };
 		A16966162C62631300E0470B /* MainContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16966152C62631300E0470B /* MainContactsListView.swift */; };
 		A16966182C62635500E0470B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16966172C62635500E0470B /* Contact.swift */; };
+		A1DA8E552C7893DA0061521F /* SailsOfYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA8E542C7893DA0061521F /* SailsOfYear.swift */; };
 		A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */; };
 		A1DEE6E92C4505200003733B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6D62C45051F0003733B /* Helpers.swift */; };
 		A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */; };
@@ -58,6 +59,7 @@
 		A16966132C625CB900E0470B /* MainContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactView.swift; sourceTree = "<group>"; };
 		A16966152C62631300E0470B /* MainContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactsListView.swift; sourceTree = "<group>"; };
 		A16966172C62635500E0470B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		A1DA8E542C7893DA0061521F /* SailsOfYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailsOfYear.swift; sourceTree = "<group>"; };
 		A1DEE6A62C45034B0003733B /* AuthScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1DEE6D62C45051F0003733B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				A15788832C63D4C90006CD0E /* Statistic.swift */,
 				A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */,
 				A16966172C62635500E0470B /* Contact.swift */,
+				A1DA8E542C7893DA0061521F /* SailsOfYear.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				A1DEE6F42C4505200003733B /* Colors.swift in Sources */,
 				A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */,
 				A1512E942C5BDA0100860F0C /* MainTrendsView.swift in Sources */,
+				A1DA8E552C7893DA0061521F /* SailsOfYear.swift in Sources */,
 				A15788822C63B4990006CD0E /* RoundedCorners.swift in Sources */,
 				A16966182C62635500E0470B /* Contact.swift in Sources */,
 				A1F911FF2C64D6D900D7CFC7 /* CalendarView.swift in Sources */,
