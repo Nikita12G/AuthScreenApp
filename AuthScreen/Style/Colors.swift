@@ -25,6 +25,22 @@ enum Colors {
         Color(r: 15, g: 10, b: 35, o: 49)
     }
     
+    static var GraphikPinkGradientFirstColor: Color {
+        Color(r: 225, g: 46, b: 254, o: 100)
+    }
+    
+    static var GraphikPinkGradientSecondColor: Color {
+        Color(r: 143, g: 0, b: 255)
+    }
+    
+    static var GraphikBlueGradientFirstColor: Color {
+        Color(r: 44, g: 128, b: 254, o: 56)
+    }
+    
+    static var GraphikBlueGradientSecondColor: Color {
+        Color(r: 44, g: 65, b: 255)
+    }
+    
     static var White: Color {
         Color(r: 255, g: 255, b: 255)
     }
@@ -44,6 +60,12 @@ enum Colors {
     static var Grey: Color {
         Color(r: 160, g: 174, b: 192)
     }
+    
+    static var DarkGrey: Color {
+        Color(r: 86, g: 87, b: 122)
+    }
+    
+    //rgba(86, 87, 122, 1)
     
 }
 

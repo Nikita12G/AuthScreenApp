@@ -15,7 +15,7 @@ enum Constants {
     authorisationPhoneMask = NSLocalizedString("authorisation.phoneMask", comment: ""),
     authorisationErrorStateTitle = NSLocalizedString("authorisation.errorStateTitle", comment: ""),
     authorisationPhoneFormat = NSLocalizedString("authorisation.phoneFormat", comment: ""),
-
+    
     fontsMontserrat = NSLocalizedString("fonts.montserrat", comment: ""),
     
     mainMovingTendTitle = NSLocalizedString("main.movingTrendTitle", comment: ""),
@@ -25,5 +25,8 @@ enum Constants {
     
     contactsTitle = NSLocalizedString("main.contactsTitle", comment: ""),
     contactListSailsProgress = NSLocalizedString("main.contactListSailsProgress", comment: ""),
-    contactListSailsComplete = NSLocalizedString("main.contactListSailsComplete", comment: "")
+    contactListSailsComplete = NSLocalizedString("main.contactListSailsComplete", comment: ""),
+    sailsValueTitle = NSLocalizedString("main.sailsValue", comment: ""),
+    sailsPercent = NSLocalizedString("main.sailsPercent", comment: ""),
+    sailsRelative = NSLocalizedString("main.sailsRelative", comment: "")
 }

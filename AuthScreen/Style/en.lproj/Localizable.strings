@@ -20,3 +20,6 @@
 "main.marketingManagersTitle" = "Marketing managers";
 "main.contactListSailsProgress" = "Sails progress: ";
 "main.contactListSailsComplete" = "Sails complite";
+"main.sailsValue" = "Sails value";
+"main.sailsPercent" = "% sails";
+"main.sailsRelative" = "relative to last year";

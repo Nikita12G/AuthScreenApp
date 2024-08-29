@@ -20,4 +20,6 @@
 "main.marketingManagersTitle" = "Маркетинговые специалисты";
 "main.contactListSailsProgress" = "Выполнено продаж: ";
 "main.contactListSailsComplete" = "Выполнено";
-
+"main.sailsValue" = "Количество продаж";
+"main.sailsPercent" = "% продаж"; 
+"main.sailsRelative" = "сравнительно с прошлым годом";

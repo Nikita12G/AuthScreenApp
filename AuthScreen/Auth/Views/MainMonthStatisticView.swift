@@ -23,7 +23,7 @@ struct MainMonthStatisticView: View {
         
         LazyVGrid(columns: columns, alignment: .leading) {
             ForEach(monthStatistic) { dataSource in
-                MainChartView(imageName: dataSource.imageName, progress: dataSource.progress, title: dataSource.title, value: "\(dataSource.value)")
+                MainCirclesChartView(imageName: dataSource.imageName, progress: dataSource.progress, title: dataSource.title, value: "\(dataSource.value)")
             }
         }.frame(maxWidth: 300)
     }

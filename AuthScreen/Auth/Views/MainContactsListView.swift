@@ -12,9 +12,7 @@ struct MainContactsListView: View {
     let dataSource = [
         Contact(avatar: "avatarContactFirst", firstName: "Nikolas", middleName: "Sidorkin", jobTitle: "Старший маркетолог, market guru", mobileOperator: "Beeline", allSailsValue: 200, sailValue: 130, gradeValue: 4.7),
         Contact(avatar: "avatarContactFirst", firstName: "Ivan", middleName: "Smit", jobTitle: "Маркетолог, market guru", mobileOperator: "MTS Russia", allSailsValue: 200, sailValue: 150, gradeValue: 4.7),
-        Contact(avatar: "avatarContactFirst", firstName: "Jon", middleName: "Salogub", jobTitle: "Маркетолог, market guru", mobileOperator: "TELE 2", allSailsValue: 200, sailValue: 30, gradeValue: 4.1),
-        Contact(avatar: "avatarContactFirst", firstName: "Magomed", middleName: "Jonson", jobTitle: "Маркетолог, market guru", mobileOperator: "Beeline", allSailsValue: 200, sailValue: 133, gradeValue: 4.3),
-        Contact(avatar: "avatarContactFirst", firstName: "Toni", middleName: "Perecatipole", jobTitle: "Маркетолог, market guru", mobileOperator: "YOTA Rossia", allSailsValue: 200, sailValue: 190, gradeValue: 4.9)
+        Contact(avatar: "avatarContactFirst", firstName: "Jon", middleName: "Salogub", jobTitle: "Маркетолог, market guru", mobileOperator: "TELE 2", allSailsValue: 200, sailValue: 30, gradeValue: 4.1)
     ]
     
     private let isDetailList: Bool

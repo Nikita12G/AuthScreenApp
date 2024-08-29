@@ -71,3 +71,9 @@ extension Date {
         }
     }
 }
+
+extension Date {
+    var month: Int {
+        Calendar.current.component(.month, from: self)
+    }
+}

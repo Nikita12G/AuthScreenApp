@@ -8,22 +8,23 @@
 import SwiftUI
 
 struct MainContentView: View {
-    
     @State private var statistic = Statistic()
+    @State private var dataLastYear = SalesOfYear.lastYear()
+    @State private var dataCurrentYear = SalesOfYear.currentYear()
+    @State private var percentageChange = SalesOfYear.percentageChange()
     @State private var monthSelected = 1
     
     var body: some View {
         VStack {
             HStack {
                 MainSideBarView()
-                Spacer()
-                Picker(Constants.monthTitle, selection: $monthSelected) {
-                    ForEach((1...12), id: \.self) { selectedMonth in
-                        Text("\(Constants.monthTitle) \(selectedMonth)").tag(selectedMonth)
+                VStack {
+                    MainChartDetailView(dataLastYear: dataLastYear, dataCurrentYear: dataCurrentYear, percentageChange: percentageChange)
+                    HStack {
+                        MainContactsListView(isDetailList: true)
+                        Spacer()
                     }
                 }
-                MainContactsListView(isDetailList: true)
-                Spacer()
                 VStack(alignment: .center) {
                     MainTrendsView(trends: statistic.getTrend(for: monthSelected))
                         .padding(EdgeInsets(top: 36, leading: 19, bottom: 20, trailing: 19))
@@ -31,11 +32,14 @@ struct MainContentView: View {
                         .padding(EdgeInsets(top: 0, leading: 40, bottom: 16, trailing: 0))
                     MainContactsListView(isDetailList: false)
                         .padding(EdgeInsets(top: 20, leading: 20, bottom: 16, trailing: 0))
+                    Spacer()
                 }.background(AuthGradientView())
                     .clipShape(RoundedCorners(topLeft: 44, bottomLeft: 44))
             }
-        }.background(Colors.DarkPurple)
-            .ignoresSafeArea()
+        }
+        .background(Colors.DarkPurple)
+        .ignoresSafeArea()
+        
     }
 }
 
