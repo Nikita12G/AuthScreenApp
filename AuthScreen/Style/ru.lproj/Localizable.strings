@@ -30,3 +30,6 @@
 "main.totalFromExternalTraffic" = "Всего с внешнего \nтрафика";
 "main.supportTitle" = "ИИ в техподдержке";
 "main.needHelp" = "Нужна помощь";
+"main.statisticTitle" = "Статистика";
+"main.showWidgets" = "Отображение виджетов";
+"main.shareTitile" = "Поделиться";

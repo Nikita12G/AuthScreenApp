@@ -42,7 +42,7 @@ struct MainContactsListView: View {
                             sailsValue: dataSource.sailsProgres)
                         .padding(12)
                     } else {
-                            MainContactView(title: dataSource.fullName, subTitle: dataSource.mobileOperator, imageName: dataSource.avatar)
+                        MainContactView(title: dataSource.fullName, subTitle: dataSource.mobileOperator, imageName: dataSource.avatar).padding(EdgeInsets(top: 2, leading: 20, bottom: 2, trailing: 20))
                     }
                 }
             }

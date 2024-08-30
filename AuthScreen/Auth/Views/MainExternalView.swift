@@ -57,7 +57,9 @@ struct MainExternalView: View {
                 }
                 VStack(alignment: .leading) {
                     ZStack(alignment: .leading) {
-                        
+                        RoundedRectangle(cornerRadius: 16)
+                            .frame(width: 146, height: 63)
+                            .foregroundStyle(Colors.White.opacity(0.04))
                         VStack(alignment: .leading) {
                             Text("\(externalData.newClientValue) \(Constants.peoplesShort)")
                                 .font(Fonts.montserrat(ofSize: 16))
@@ -69,7 +71,7 @@ struct MainExternalView: View {
                     }
                     ZStack(alignment: .leading) {
                         RoundedRectangle(cornerRadius: 16)
-                            .frame(width: 146, height: 63)
+                            .frame(width: 146, height: 78)
                             .foregroundStyle(Colors.White.opacity(0.04))
                         VStack(alignment: .leading) {
                             Text("\(externalData.allClientValue) \(Constants.peoplesShort)")
@@ -78,6 +80,7 @@ struct MainExternalView: View {
                             Text(Constants.totalFromExternalTraffic)
                                 .font(Fonts.montserrat(ofSize: 12))
                                 .foregroundStyle(Colors.Grey)
+                                .lineLimit(nil)
                         }.padding(12)
                     }
                 }

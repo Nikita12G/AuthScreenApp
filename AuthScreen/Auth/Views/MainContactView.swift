@@ -37,10 +37,10 @@ struct MainContactView: View {
                     .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 12))
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
-            .background(Colors.Blue)
+            .background(Colors.White.opacity(0.04))
             .cornerRadius(16)
         }
-        .frame(maxWidth: 300, maxHeight: 68)
+        .frame(maxWidth: 280, maxHeight: 68)
     }
 }
 
