@@ -5,8 +5,6 @@
 //  Created by Никита Гуляев on 20.08.2024.
 //
 
-import Foundation
-
 import SwiftUI
 
 struct MainContactDetailView: View {
@@ -37,7 +35,6 @@ struct MainContactDetailView: View {
                         Text(title)
                             .font(Fonts.montserrat(ofSize: 14))
                             .foregroundStyle(Colors.White)
-                        Spacer()
                         Image("starIcon")
                         Text(gradeValue.description)
                             .font(Fonts.montserrat(ofSize: 14))
@@ -50,20 +47,23 @@ struct MainContactDetailView: View {
             }.padding(12)
             VStack {
                 ZStack(alignment: .leading) {
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(Colors.White.opacity(0.08))
-                        .frame(width: 432, height: 6)
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(Colors.Blue)
-                        .frame(width: 432 * CGFloat(sailsValue), height: 6)
-                        .cornerRadius(12)
+                    GeometryReader { geometry in
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(Colors.White.opacity(0.08))
+                            .frame(width: geometry.size.width, height: 6)
+                        
+                        RoundedRectangle(cornerRadius: 12)
+                            .fill(Colors.Blue)
+                            .frame(width: geometry.size.width * CGFloat(sailsValue), height: 6)
+                            .cornerRadius(12)
+                    }
+                    .frame(height: 6)
                 }
                 .padding(EdgeInsets(top: 8, leading: 0, bottom: 10, trailing: 0))
-                HStack {
+                HStack(alignment: .center) {
                     Text("\(Constants.contactListSailsProgress)\(sailsValueStr)")
                         .font(Fonts.montserrat(ofSize: 12))
                         .foregroundStyle(Colors.White)
-                    Spacer()
                     Text("\(Constants.contactListSailsComplete) \(sailsProgressPercent)")
                         .font(Fonts.montserrat(ofSize: 12))
                         .foregroundStyle(Colors.White)
@@ -75,5 +75,5 @@ struct MainContactDetailView: View {
 }
 
 #Preview {
-    MainContentView()
+    MainContactsListView(isDetailList: true)
 }

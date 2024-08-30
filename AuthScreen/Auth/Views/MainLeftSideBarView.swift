@@ -1,5 +1,5 @@
 //
-//  MainSideBarView.swift
+//  MainLeftSideBarView.swift
 //  AuthScreen
 //
 //  Created by Никита Гуляев on 30.07.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainSideBarView: View {
+struct MainLeftSideBarView: View {
     var body: some View {
         VStack() {
             Button {

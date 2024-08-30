@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct MainExternalView: View {
-    @State private var targetMonth = Date().month
+    @Binding private var targetMonth: Int
     @State private var externalData = ExternalTraffic.generateData(forMonth: Date().month)
+    
+    init(targetMonth: Binding<Int>) {
+        self._targetMonth = targetMonth
+    }
     
     var body: some View {
         VStack {
@@ -17,7 +21,6 @@ struct MainExternalView: View {
                 Text(Constants.externalTraffic)
                     .foregroundStyle(Colors.White)
                     .font(Fonts.montserrat(ofSize: 18))
-                Spacer()
                 Picker("", selection: $targetMonth) {
                     ForEach((1...12), id: \.self) { selectedMonth in
                         Text(Date.formattedString(year: externalData.year, month: selectedMonth).capitalized)
@@ -54,9 +57,7 @@ struct MainExternalView: View {
                 }
                 VStack(alignment: .leading) {
                     ZStack(alignment: .leading) {
-                        RoundedRectangle(cornerRadius: 16)
-                            .frame(width: 146, height: 63)
-                            .foregroundStyle(Colors.White.opacity(0.04))
+                        
                         VStack(alignment: .leading) {
                             Text("\(externalData.newClientValue) \(Constants.peoplesShort)")
                                 .font(Fonts.montserrat(ofSize: 16))

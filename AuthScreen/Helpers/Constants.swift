@@ -33,5 +33,7 @@ enum Constants {
     fromAllPurchases = NSLocalizedString("main.fromAllPurchases", comment: ""),
     peoplesShort = NSLocalizedString("main.peoplesShort", comment: ""),
     newClients = NSLocalizedString("main.newClients", comment: ""),
-    totalFromExternalTraffic = NSLocalizedString("main.totalFromExternalTraffic", comment: "")
+    totalFromExternalTraffic = NSLocalizedString("main.totalFromExternalTraffic", comment: ""),
+    supportTitle = NSLocalizedString("main.supportTitle", comment: ""),
+    needHelp = NSLocalizedString("main.needHelp", comment: "")
 }

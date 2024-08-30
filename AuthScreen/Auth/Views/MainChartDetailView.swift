@@ -10,14 +10,16 @@ import Charts
 
 struct MainChartDetailView: View {
     
-    @State private var dataLastYear: [SalesOfYear]
-    @State private var dataCurrentYear: [SalesOfYear]
-    @State private var percentageChange: Int
+    private var dataLastYear: [SalesOfYear]
+    private var dataCurrentYear: [SalesOfYear]
+    private var percentageChange: Int
+    @Binding private var targetMonth: Int
     
-    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear], percentageChange: Int) {
+    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear], percentageChange: Int, targetMonth: Binding<Int>) {
         self.dataLastYear = dataLastYear
         self.dataCurrentYear = dataCurrentYear
         self.percentageChange = percentageChange
+        self._targetMonth = targetMonth
     }
     
     var body: some View {
@@ -36,7 +38,7 @@ struct MainChartDetailView: View {
                     .padding(-5)
             }
             .padding(EdgeInsets(top: 6, leading: 0, bottom: 24, trailing: 0))
-            MainChartView(dataLastYear: dataLastYear, dataCurrentYear: dataCurrentYear)
+            MainChartView(dataLastYear: dataLastYear, dataCurrentYear: dataCurrentYear, targetMonth: _targetMonth)
         }
         .padding(24)
         .background(AuthGradientView())

@@ -40,10 +40,9 @@ struct MainContactsListView: View {
                             gradeValue: dataSource.gradeValue,
                             sailsProgressPercent: dataSource.sailsProgresProcent,
                             sailsValue: dataSource.sailsProgres)
-                        .frame(width: 456, height: 112)
                         .padding(12)
                     } else {
-                        MainContactView(title: dataSource.fullName, subTitle: dataSource.mobileOperator, imageName: dataSource.avatar).frame(width: 260, height: 60)
+                            MainContactView(title: dataSource.fullName, subTitle: dataSource.mobileOperator, imageName: dataSource.avatar)
                     }
                 }
             }

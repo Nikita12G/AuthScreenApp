@@ -19,25 +19,31 @@ struct MainContactView: View {
     }
     
     var body: some View {
-        HStack {
-            Image(imageName)
-                .padding(EdgeInsets(top: 14, leading: 12, bottom: 14, trailing: 8))
-            VStack(alignment: .leading) {
-                Text(title)
-                    .font(Fonts.montserrat(ofSize: 14))
-                    .foregroundStyle(Colors.White)
-                Text(subTitle)
-                    .font(Fonts.montserrat(ofSize: 12))
-                    .foregroundStyle(Colors.Grey)
-            }.padding(EdgeInsets(top: 12, leading: 0, bottom: 12, trailing: 0))
-            Spacer()
-            Image("rightArrow")
-                .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 12))
-        }.background(Colors.White.opacity(0.04))
+        GeometryReader { geometry in
+            HStack {
+                Image(imageName)
+                    .padding(EdgeInsets(top: 14, leading: 12, bottom: 14, trailing: 8))
+                VStack(alignment: .leading) {
+                    Text(title)
+                        .font(Fonts.montserrat(ofSize: 14))
+                        .foregroundStyle(Colors.White)
+                    Text(subTitle)
+                        .font(Fonts.montserrat(ofSize: 12))
+                        .foregroundStyle(Colors.Grey)
+                }
+                .padding(EdgeInsets(top: 12, leading: 0, bottom: 12, trailing: 0))
+                Spacer()
+                Image("rightArrow")
+                    .padding(EdgeInsets(top: 20, leading: 0, bottom: 20, trailing: 12))
+            }
+            .frame(width: geometry.size.width, height: geometry.size.height)
+            .background(Colors.Blue)
             .cornerRadius(16)
+        }
+        .frame(maxWidth: 300, maxHeight: 68)
     }
 }
 
 #Preview {
-    MainContactsListView(isDetailList: true)
+    MainContactsListView(isDetailList: false)
 }

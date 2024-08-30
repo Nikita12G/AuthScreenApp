@@ -12,34 +12,26 @@ struct MainContentView: View {
     @State private var dataLastYear = SalesOfYear.lastYear()
     @State private var dataCurrentYear = SalesOfYear.currentYear()
     @State private var percentageChange = SalesOfYear.percentageChange()
-    @State private var monthSelected = 1
-    @State private var targetMonthForExternalTraffic = Date().month
+    @State private var targetMonth = Date().month
     
     var body: some View {
         VStack {
             HStack {
-                MainSideBarView()
+                MainLeftSideBarView()
                 VStack {
-                    MainChartDetailView(dataLastYear: dataLastYear, dataCurrentYear: dataCurrentYear, percentageChange: percentageChange)
+                    MainChartDetailView(dataLastYear: dataLastYear, dataCurrentYear: dataCurrentYear, percentageChange: percentageChange, targetMonth: $targetMonth)
                     HStack {
                         MainContactsListView(isDetailList: true)
-                        MainExternalView()
+                        VStack {
+                            MainExternalView(targetMonth: $targetMonth)
+                            MainSupportView()
+                        }
                     }
                 }
-                VStack(alignment: .center) {
-                    MainTrendsView(trends: statistic.getTrend(for: monthSelected))
-                        .padding(EdgeInsets(top: 36, leading: 19, bottom: 20, trailing: 19))
-                    MainMonthStatisticView(monthStatistic: statistic.getStatistics(for: monthSelected))
-                        .padding(EdgeInsets(top: 0, leading: 40, bottom: 16, trailing: 0))
-                    MainContactsListView(isDetailList: false)
-                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 16, trailing: 0))
-                    Spacer()
-                }.background(AuthGradientView())
-                    .clipShape(RoundedCorners(topLeft: 44, bottomLeft: 44))
+                MainRightSideBar(statistic: _statistic, monthSelected: $targetMonth)
             }
         }
         .background(Colors.DarkPurple)
-        .ignoresSafeArea()
         
     }
 }

@@ -28,3 +28,5 @@
 "main.peoplesShort" = "чел.";
 "main.newClients" = "Новые клиенты";
 "main.totalFromExternalTraffic" = "Всего с внешнего \nтрафика";
+"main.supportTitle" = "ИИ в техподдержке";
+"main.needHelp" = "Нужна помощь";

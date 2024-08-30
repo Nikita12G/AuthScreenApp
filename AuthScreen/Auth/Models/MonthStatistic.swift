@@ -8,7 +8,7 @@
 import Foundation
 
 struct MonthStatistic: Identifiable {
-    var id = UUID()
+    let id = UUID()
     
     let title: String
     let value: Double

@@ -16,8 +16,9 @@ struct MainPointView: View {
                 .frame(width: 32, height: 32)
             Circle()
                 .stroke(Colors.Purple, lineWidth: 4)
-                .foregroundStyle(Colors.White)
+                .background(Colors.White)
                 .frame(width: 20, height: 20)
+                .cornerRadius(10)
         }
     }
 }

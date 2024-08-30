@@ -9,14 +9,17 @@ import SwiftUI
 import Charts
 
 struct MainChartView: View {
-    @State private var dataLastYear: [SalesOfYear]
-    @State private var dataCurrentYear: [SalesOfYear]
-    @State private var selectedValue: Int?
+    
+    private var dataLastYear: [SalesOfYear]
+    private var dataCurrentYear: [SalesOfYear]
+    
+    @Binding private var targetMonth: Int
     @State private var circlePosition: CGPoint = .zero
     
-    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear]) {
+    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear], targetMonth: Binding<Int>) {
         self.dataLastYear = dataLastYear
         self.dataCurrentYear = dataCurrentYear
+        self._targetMonth = targetMonth
     }
     
     var body: some View {
@@ -28,6 +31,7 @@ struct MainChartView: View {
                             x: .value("Month", item.date, unit: .month),
                             y: .value("Sales", item.sailValue)
                         )
+                        .interpolationMethod(.catmullRom)
                         .foregroundStyle(
                             LinearGradient(
                                 gradient: Gradient(colors: [Colors.GraphikBlueGradientSecondColor, Colors.GraphikBlueGradientFirstColor]),
@@ -41,7 +45,9 @@ struct MainChartView: View {
                             x: .value("Month", item.date, unit: .month),
                             y: .value("Sales", item.sailValue)
                         )
+                        .interpolationMethod(.catmullRom)
                         .foregroundStyle(Colors.Blue)
+                        .lineStyle(StrokeStyle(lineWidth: 3))
                     }
                 }
                 .chartXAxis {
@@ -64,6 +70,7 @@ struct MainChartView: View {
                             x: .value("Month", item.date, unit: .month),
                             y: .value("Sales", item.sailValue)
                         )
+                        .interpolationMethod(.catmullRom)
                         .foregroundStyle(
                             LinearGradient(
                                 gradient: Gradient(colors: [Colors.GraphikPinkGradientSecondColor, Colors.GraphikPinkGradientFirstColor]),
@@ -78,6 +85,28 @@ struct MainChartView: View {
                             y: .value("Sales", item.sailValue)
                         )
                         .foregroundStyle(Colors.Purple)
+                        .interpolationMethod(.catmullRom)
+                        .lineStyle(StrokeStyle(lineWidth: 3))
+                    }
+                    if let selectedItem = dataCurrentYear.first(where: { Calendar.current.component(.month, from: $0.date) == targetMonth }) {
+                        PointMark(
+                            x: .value("Month", selectedItem.date, unit: .month),
+                            y: .value("Sales", selectedItem.sailValue)
+                        )
+                        .symbol {
+                            VStack {
+                                ZStack {
+                                    RoundedRectangle(cornerSize: CGSize(width: 42, height: 28))
+                                        .frame(width: 42, height: 28)
+                                        .foregroundStyle(Colors.White.opacity(0.08))
+                                    Text(findClosestDataPoint(for: targetMonth, in: dataCurrentYear)?.sailValue.description ?? "")
+                                        .font(Fonts.montserrat(ofSize: 14))
+                                        .foregroundStyle(Colors.White)
+                                }
+                                MainPointView()
+                                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
+                            }
+                        }
                     }
                 }
                 .chartYAxis {
@@ -92,49 +121,22 @@ struct MainChartView: View {
                         AxisValueLabel().foregroundStyle(Color.clear)
                     }
                 }
-            }.chartOverlay { proxy in
-                GeometryReader { geometry in
-                    Rectangle().fill(Color.clear).contentShape(Rectangle())
-                        .gesture(
-                            DragGesture()
-                                .onChanged { value in
-                                    let location = value.location
-
-                                    if let xValue = proxy.value(atX: location.x, as: Date.self) {
-                                        let allData = dataCurrentYear
-                                        if let closestItem = findClosestDataPoint(to: xValue, in: allData) {
-                                            selectedValue = Int(closestItem.sailValue)
-
-                                            if let xPosition = proxy.position(forX: closestItem.date),
-                                               let yPosition = proxy.position(forY: closestItem.sailValue) {
-                                                circlePosition = CGPoint(x: xPosition, y: yPosition)
-                                            }
-                                        }
-                                    }
-                                }
-                        )
-                }
-            }
-            if let selectedValue {
-                ZStack {
-                    RoundedRectangle(cornerSize: CGSize(width: 42, height: 28))
-                        .frame(width: 42, height: 28)
-                        .foregroundStyle(Colors.White.opacity(0.08))
-                    Text(selectedValue.description)
-                        .font(Fonts.montserrat(ofSize: 14))
-                        .foregroundStyle(Colors.White)
-                }
-                .position(x: circlePosition.x, y: circlePosition.y - 40)
-                MainPointView()
-                    .position(circlePosition)
             }
         }
     }
-    
-    private func findClosestDataPoint(to date: Date, in data: [SalesOfYear]) -> SalesOfYear? {
-        return data.min(by: { abs($0.date.timeIntervalSince(date)) < abs($1.date.timeIntervalSince(date)) })
+    private func findClosestDataPoint(for month: Int, in data: [SalesOfYear]) -> SalesOfYear? {
+        let calendar = Calendar.current
+        
+        return data.min { (item1, item2) -> Bool in
+            let month1 = calendar.component(.month, from: item1.date)
+            let month2 = calendar.component(.month, from: item2.date)
+            
+            return abs(month - month1) < abs(month - month2)
+        }
     }
 }
+
+
 
 #Preview {
     MainContentView()

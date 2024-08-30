@@ -44,7 +44,14 @@ enum Colors {
     static var GraphikGreenGradientColor: Color {
         Color(r: 5, g: 205, b: 153)
     }
-
+    
+    static var SupportBlackFirstGradientColor: Color {
+        Color(r: 6, g: 11, b: 40, o: 74)
+    }
+    
+    static var SupportBlackSecondGradientColor: Color {
+        Color(r: 10, g: 14, b: 35, o: 71)
+    }
     
     static var White: Color {
         Color(r: 255, g: 255, b: 255)
