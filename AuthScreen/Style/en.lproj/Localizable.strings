@@ -23,3 +23,8 @@
 "main.sailsValue" = "Sails value";
 "main.sailsPercent" = "% sails";
 "main.sailsRelative" = "relative to last year";
+"main.externalTraffic" = "External traffic";
+"main.fromAllPurchases" = "From all purchases";
+"main.peoplesShort" = "peip.";
+"main.newClients" = "New clients";
+"main.totalFromExternalTraffic" = "Total from external \ntraffic";

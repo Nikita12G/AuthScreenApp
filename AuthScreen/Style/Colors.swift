@@ -41,6 +41,11 @@ enum Colors {
         Color(r: 44, g: 65, b: 255)
     }
     
+    static var GraphikGreenGradientColor: Color {
+        Color(r: 5, g: 205, b: 153)
+    }
+
+    
     static var White: Color {
         Color(r: 255, g: 255, b: 255)
     }
@@ -64,9 +69,6 @@ enum Colors {
     static var DarkGrey: Color {
         Color(r: 86, g: 87, b: 122)
     }
-    
-    //rgba(86, 87, 122, 1)
-    
 }
 
 extension Color {

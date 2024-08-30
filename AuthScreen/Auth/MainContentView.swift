@@ -13,6 +13,7 @@ struct MainContentView: View {
     @State private var dataCurrentYear = SalesOfYear.currentYear()
     @State private var percentageChange = SalesOfYear.percentageChange()
     @State private var monthSelected = 1
+    @State private var targetMonthForExternalTraffic = Date().month
     
     var body: some View {
         VStack {
@@ -22,7 +23,7 @@ struct MainContentView: View {
                     MainChartDetailView(dataLastYear: dataLastYear, dataCurrentYear: dataCurrentYear, percentageChange: percentageChange)
                     HStack {
                         MainContactsListView(isDetailList: true)
-                        Spacer()
+                        MainExternalView()
                     }
                 }
                 VStack(alignment: .center) {

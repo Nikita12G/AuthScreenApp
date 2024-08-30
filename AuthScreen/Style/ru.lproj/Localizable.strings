@@ -23,3 +23,8 @@
 "main.sailsValue" = "Количество продаж";
 "main.sailsPercent" = "% продаж"; 
 "main.sailsRelative" = "сравнительно с прошлым годом";
+"main.externalTraffic" = "Внешний трафик";
+"main.fromAllPurchases" = "От всех покупок";
+"main.peoplesShort" = "чел.";
+"main.newClients" = "Новые клиенты";
+"main.totalFromExternalTraffic" = "Всего с внешнего \nтрафика";

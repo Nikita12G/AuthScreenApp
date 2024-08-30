@@ -28,5 +28,10 @@ enum Constants {
     contactListSailsComplete = NSLocalizedString("main.contactListSailsComplete", comment: ""),
     sailsValueTitle = NSLocalizedString("main.sailsValue", comment: ""),
     sailsPercent = NSLocalizedString("main.sailsPercent", comment: ""),
-    sailsRelative = NSLocalizedString("main.sailsRelative", comment: "")
+    sailsRelative = NSLocalizedString("main.sailsRelative", comment: ""),
+    externalTraffic = NSLocalizedString("main.externalTraffic", comment: ""),
+    fromAllPurchases = NSLocalizedString("main.fromAllPurchases", comment: ""),
+    peoplesShort = NSLocalizedString("main.peoplesShort", comment: ""),
+    newClients = NSLocalizedString("main.newClients", comment: ""),
+    totalFromExternalTraffic = NSLocalizedString("main.totalFromExternalTraffic", comment: "")
 }

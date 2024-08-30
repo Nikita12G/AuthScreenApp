@@ -39,6 +39,8 @@
 		A1EC2AE92C5D11E000014EA4 /* MainMonthStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC2AE82C5D11E000014EA4 /* MainMonthStatisticView.swift */; };
 		A1EC2AEB2C5D125900014EA4 /* MonthStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */; };
 		A1F18E622C7EF90600547CEB /* MainPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E612C7EF90600547CEB /* MainPointView.swift */; };
+		A1F18E672C80605C00547CEB /* MainExternalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E662C80605C00547CEB /* MainExternalView.swift */; };
+		A1F18E692C80A6EA00547CEB /* ExternalTraffic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */; };
 		A1F911F72C64D4D100D7CFC7 /* UserContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911F62C64D4D100D7CFC7 /* UserContentView.swift */; };
 		A1F911F92C64D56600D7CFC7 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911F82C64D56600D7CFC7 /* ChatContentView.swift */; };
 		A1F911FD2C64D69100D7CFC7 /* HotOffersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911FC2C64D69100D7CFC7 /* HotOffersView.swift */; };
@@ -85,6 +87,8 @@
 		A1EC2AE82C5D11E000014EA4 /* MainMonthStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMonthStatisticView.swift; sourceTree = "<group>"; };
 		A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStatistic.swift; sourceTree = "<group>"; };
 		A1F18E612C7EF90600547CEB /* MainPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPointView.swift; sourceTree = "<group>"; };
+		A1F18E662C80605C00547CEB /* MainExternalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainExternalView.swift; sourceTree = "<group>"; };
+		A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalTraffic.swift; sourceTree = "<group>"; };
 		A1F911F62C64D4D100D7CFC7 /* UserContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentView.swift; sourceTree = "<group>"; };
 		A1F911F82C64D56600D7CFC7 /* ChatContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
 		A1F911FC2C64D69100D7CFC7 /* HotOffersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotOffersView.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				A16966132C625CB900E0470B /* MainContactView.swift */,
 				A16966152C62631300E0470B /* MainContactsListView.swift */,
 				A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */,
+				A1F18E662C80605C00547CEB /* MainExternalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */,
 				A16966172C62635500E0470B /* Contact.swift */,
 				A1DA8E542C7893DA0061521F /* SalesOfYear.swift */,
+				A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -404,6 +410,7 @@
 				A1512E942C5BDA0100860F0C /* MainTrendsView.swift in Sources */,
 				A1DA8E552C7893DA0061521F /* SalesOfYear.swift in Sources */,
 				A15788822C63B4990006CD0E /* RoundedCorners.swift in Sources */,
+				A1F18E692C80A6EA00547CEB /* ExternalTraffic.swift in Sources */,
 				A16966182C62635500E0470B /* Contact.swift in Sources */,
 				A1F911FF2C64D6D900D7CFC7 /* CalendarView.swift in Sources */,
 				A1512E662C5A7C9600860F0C /* MainContentView.swift in Sources */,
@@ -416,6 +423,7 @@
 				A16966142C625CB900E0470B /* MainContactView.swift in Sources */,
 				A1F912012C64D71300D7CFC7 /* SettingsView.swift in Sources */,
 				A15788842C63D4C90006CD0E /* Statistic.swift in Sources */,
+				A1F18E672C80605C00547CEB /* MainExternalView.swift in Sources */,
 				A1E22C082C592A0D00D3BA9C /* MainSideBarView.swift in Sources */,
 				A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */,
 				A1F9120A2C65068500D7CFC7 /* TrendProvider.swift in Sources */,
