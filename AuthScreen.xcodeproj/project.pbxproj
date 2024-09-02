@@ -37,6 +37,7 @@
 		A1DEE6F52C4505200003733B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E82C4505200003733B /* Extensions.swift */; };
 		A1E22C052C59257100D3BA9C /* InputViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E22C042C59257100D3BA9C /* InputViewState.swift */; };
 		A1E22C082C592A0D00D3BA9C /* MainLeftSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E22C072C592A0D00D3BA9C /* MainLeftSideBarView.swift */; };
+		A1E70B222C85E3C9001DF6DD /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1E70B212C85E3C9001DF6DD /* OpenAPIClient */; };
 		A1EC2AE72C5D02F200014EA4 /* MainCirclesChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC2AE62C5D02F200014EA4 /* MainCirclesChartView.swift */; };
 		A1EC2AE92C5D11E000014EA4 /* MainMonthStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC2AE82C5D11E000014EA4 /* MainMonthStatisticView.swift */; };
 		A1EC2AEB2C5D125900014EA4 /* MonthStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */; };
@@ -87,6 +88,7 @@
 		A1DEE6E82C4505200003733B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A1E22C042C59257100D3BA9C /* InputViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewState.swift; sourceTree = "<group>"; };
 		A1E22C072C592A0D00D3BA9C /* MainLeftSideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainLeftSideBarView.swift; path = ../../Main/Views/MainLeftSideBarView.swift; sourceTree = "<group>"; };
+		A1E70B1F2C85E24B001DF6DD /* NewsAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NewsAPI; path = AuthScreen/NewsAPI; sourceTree = "<group>"; };
 		A1EC2AE62C5D02F200014EA4 /* MainCirclesChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainCirclesChartView.swift; path = ../../Main/Views/MainCirclesChartView.swift; sourceTree = "<group>"; };
 		A1EC2AE82C5D11E000014EA4 /* MainMonthStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMonthStatisticView.swift; path = ../../Main/Views/MainMonthStatisticView.swift; sourceTree = "<group>"; };
 		A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonthStatistic.swift; path = ../../Main/Models/MonthStatistic.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E70B222C85E3C9001DF6DD /* OpenAPIClient in Frameworks */,
 				F85F707BC3867D3ADC1FB847 /* Pods_AuthScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +168,7 @@
 		A1DEE69D2C45034B0003733B = {
 			isa = PBXGroup;
 			children = (
+				A1E70B1F2C85E24B001DF6DD /* NewsAPI */,
 				A1DEE6A82C45034B0003733B /* AuthScreen */,
 				A1DEE6A72C45034B0003733B /* Products */,
 				0F854EF055517FCF5AB30C6E /* Pods */,
@@ -329,6 +333,9 @@
 			dependencies = (
 			);
 			name = AuthScreen;
+			packageProductDependencies = (
+				A1E70B212C85E3C9001DF6DD /* OpenAPIClient */,
+			);
 			productName = AuthScreen;
 			productReference = A1DEE6A62C45034B0003733B /* AuthScreen.app */;
 			productType = "com.apple.product-type.application";
@@ -674,6 +681,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1E70B212C85E3C9001DF6DD /* OpenAPIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAPIClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1DEE69E2C45034B0003733B /* Project object */;
 }
