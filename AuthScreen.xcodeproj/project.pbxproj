@@ -55,23 +55,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactDetailView.swift; sourceTree = "<group>"; };
+		A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainContactDetailView.swift; path = ../../Main/Views/MainContactDetailView.swift; sourceTree = "<group>"; };
 		A1512E612C5A6B0000860F0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		A1512E652C5A7C9600860F0C /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		A1512E652C5A7C9600860F0C /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainContentView.swift; path = ../Main/MainContentView.swift; sourceTree = "<group>"; };
 		A1512E732C5A81EA00860F0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A1512E762C5A825200860F0C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A1512E932C5BDA0100860F0C /* MainTrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTrendsView.swift; sourceTree = "<group>"; };
+		A1512E932C5BDA0100860F0C /* MainTrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTrendsView.swift; path = ../../Main/Views/MainTrendsView.swift; sourceTree = "<group>"; };
 		A15788812C63B4990006CD0E /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
-		A15788832C63D4C90006CD0E /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
-		A163B58A2C5BDB4D007C44E0 /* Trends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trends.swift; sourceTree = "<group>"; };
-		A16966132C625CB900E0470B /* MainContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactView.swift; sourceTree = "<group>"; };
-		A16966152C62631300E0470B /* MainContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContactsListView.swift; sourceTree = "<group>"; };
-		A16966172C62635500E0470B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		A19B21A72C8187C1008BDC9D /* MainSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSupportView.swift; sourceTree = "<group>"; };
-		A19B21A92C8195A6008BDC9D /* MainRightSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRightSideBar.swift; sourceTree = "<group>"; };
-		A1CF7B782C7C7820004F8B34 /* MainChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChartView.swift; sourceTree = "<group>"; };
-		A1DA8E542C7893DA0061521F /* SalesOfYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesOfYear.swift; sourceTree = "<group>"; };
-		A1DA8EBF2C7895160061521F /* MainChartDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChartDetailView.swift; sourceTree = "<group>"; };
+		A15788832C63D4C90006CD0E /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Statistic.swift; path = ../../Main/Models/Statistic.swift; sourceTree = "<group>"; };
+		A163B58A2C5BDB4D007C44E0 /* Trends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Trends.swift; path = ../../Main/Models/Trends.swift; sourceTree = "<group>"; };
+		A16966132C625CB900E0470B /* MainContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainContactView.swift; path = ../../Main/Views/MainContactView.swift; sourceTree = "<group>"; };
+		A16966152C62631300E0470B /* MainContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainContactsListView.swift; path = ../../Main/Views/MainContactsListView.swift; sourceTree = "<group>"; };
+		A16966172C62635500E0470B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = ../../Main/Models/Contact.swift; sourceTree = "<group>"; };
+		A19B21A72C8187C1008BDC9D /* MainSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainSupportView.swift; path = ../../Main/Views/MainSupportView.swift; sourceTree = "<group>"; };
+		A19B21A92C8195A6008BDC9D /* MainRightSideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainRightSideBar.swift; path = ../../Main/Views/MainRightSideBar.swift; sourceTree = "<group>"; };
+		A1CF7B782C7C7820004F8B34 /* MainChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainChartView.swift; path = ../../Main/Views/MainChartView.swift; sourceTree = "<group>"; };
+		A1DA8E542C7893DA0061521F /* SalesOfYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SalesOfYear.swift; path = ../../Main/Models/SalesOfYear.swift; sourceTree = "<group>"; };
+		A1DA8EBF2C7895160061521F /* MainChartDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainChartDetailView.swift; path = ../../Main/Views/MainChartDetailView.swift; sourceTree = "<group>"; };
 		A1DEE6A62C45034B0003733B /* AuthScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1DEE6D62C45051F0003733B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -86,13 +86,13 @@
 		A1DEE6E62C4505200003733B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A1DEE6E82C4505200003733B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A1E22C042C59257100D3BA9C /* InputViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewState.swift; sourceTree = "<group>"; };
-		A1E22C072C592A0D00D3BA9C /* MainLeftSideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLeftSideBarView.swift; sourceTree = "<group>"; };
-		A1EC2AE62C5D02F200014EA4 /* MainCirclesChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCirclesChartView.swift; sourceTree = "<group>"; };
-		A1EC2AE82C5D11E000014EA4 /* MainMonthStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMonthStatisticView.swift; sourceTree = "<group>"; };
-		A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthStatistic.swift; sourceTree = "<group>"; };
-		A1F18E612C7EF90600547CEB /* MainPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPointView.swift; sourceTree = "<group>"; };
-		A1F18E662C80605C00547CEB /* MainExternalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainExternalView.swift; sourceTree = "<group>"; };
-		A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalTraffic.swift; sourceTree = "<group>"; };
+		A1E22C072C592A0D00D3BA9C /* MainLeftSideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainLeftSideBarView.swift; path = ../../Main/Views/MainLeftSideBarView.swift; sourceTree = "<group>"; };
+		A1EC2AE62C5D02F200014EA4 /* MainCirclesChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainCirclesChartView.swift; path = ../../Main/Views/MainCirclesChartView.swift; sourceTree = "<group>"; };
+		A1EC2AE82C5D11E000014EA4 /* MainMonthStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMonthStatisticView.swift; path = ../../Main/Views/MainMonthStatisticView.swift; sourceTree = "<group>"; };
+		A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonthStatistic.swift; path = ../../Main/Models/MonthStatistic.swift; sourceTree = "<group>"; };
+		A1F18E612C7EF90600547CEB /* MainPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainPointView.swift; path = ../../Main/Views/MainPointView.swift; sourceTree = "<group>"; };
+		A1F18E662C80605C00547CEB /* MainExternalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainExternalView.swift; path = ../../Main/Views/MainExternalView.swift; sourceTree = "<group>"; };
+		A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExternalTraffic.swift; path = ../../Main/Models/ExternalTraffic.swift; sourceTree = "<group>"; };
 		A1F911F62C64D4D100D7CFC7 /* UserContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentView.swift; sourceTree = "<group>"; };
 		A1F911F82C64D56600D7CFC7 /* ChatContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
 		A1F911FC2C64D69100D7CFC7 /* HotOffersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotOffersView.swift; sourceTree = "<group>"; };
