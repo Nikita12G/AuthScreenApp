@@ -144,7 +144,8 @@
 				A1F18E662C80605C00547CEB /* MainExternalView.swift */,
 				A19B21A72C8187C1008BDC9D /* MainSupportView.swift */,
 			);
-			path = Views;
+			name = Views;
+			path = ../Main/Views;
 			sourceTree = "<group>";
 		};
 		A163B5892C5BDB35007C44E0 /* Models */ = {
@@ -157,7 +158,8 @@
 				A1DA8E542C7893DA0061521F /* SalesOfYear.swift */,
 				A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */,
 			);
-			path = Models;
+			name = Models;
+			path = ../Main/Models;
 			sourceTree = "<group>";
 		};
 		A1DEE69D2C45034B0003733B = {
