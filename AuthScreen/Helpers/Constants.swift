@@ -9,6 +9,9 @@ import Foundation
 
 enum Constants {
     static let
+    
+    newsApiKey =  "228c3952f0524af9a7de30fc3400750f",
+    
     authorisationTitle = NSLocalizedString("authorisation.title", comment: ""),
     authorisationSubtitle = NSLocalizedString("authorisation.subTitle", comment: ""),
     authorisationRequestTitle = NSLocalizedString("authorisation.requestTitle", comment: ""),
@@ -26,7 +29,7 @@ enum Constants {
     contactsTitle = NSLocalizedString("main.contactsTitle", comment: ""),
     contactListSailsProgress = NSLocalizedString("main.contactListSailsProgress", comment: ""),
     contactListSailsComplete = NSLocalizedString("main.contactListSailsComplete", comment: ""),
-    sailsValueTitle = NSLocalizedString("main.sailsValue", comment: ""),
+    newsCount = NSLocalizedString("main.newsCount", comment: ""),
     sailsPercent = NSLocalizedString("main.sailsPercent", comment: ""),
     sailsRelative = NSLocalizedString("main.sailsRelative", comment: ""),
     externalTraffic = NSLocalizedString("main.externalTraffic", comment: ""),

@@ -1,5 +1,5 @@
 //
-//  SalesOfYear.swift
+//  NewsOfDay.swift
 //  AuthScreen
 //
 //  Created by Никита Гуляев on 23.08.2024.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct SalesOfYear: Identifiable {
+struct NewsOfDay: Identifiable {
     let id = UUID()
     let date: Date
     let sailValue: Int
     
-    static func currentYear() -> [SalesOfYear] {
+    static func currentYear() -> [NewsOfDay] {
         
         return [
             .init(date: Date(year: 2024, month: 01), sailValue: 155),
@@ -30,7 +30,7 @@ struct SalesOfYear: Identifiable {
         ]
     }
     
-    static func lastYear() -> [SalesOfYear] {
+    static func lastYear() -> [NewsOfDay] {
         
         return [
             .init(date: Date(year: 2023, month: 01), sailValue: 456),

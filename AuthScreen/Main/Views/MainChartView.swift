@@ -10,13 +10,13 @@ import Charts
 
 struct MainChartView: View {
     
-    private var dataLastYear: [SalesOfYear]
-    private var dataCurrentYear: [SalesOfYear]
+    private var dataLastYear: [NewsOfDay]
+    private var dataCurrentYear: [NewsOfDay]
     
     @Binding private var targetMonth: Int
     @State private var circlePosition: CGPoint = .zero
     
-    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear], targetMonth: Binding<Int>) {
+    init(dataLastYear: [NewsOfDay], dataCurrentYear: [NewsOfDay], targetMonth: Binding<Int>) {
         self.dataLastYear = dataLastYear
         self.dataCurrentYear = dataCurrentYear
         self._targetMonth = targetMonth
@@ -28,7 +28,7 @@ struct MainChartView: View {
                 Chart {
                     ForEach(dataLastYear) { item in
                         AreaMark(
-                            x: .value("Month", item.date, unit: .month),
+                            x: .value("Time", item.date, unit: .minute),
                             y: .value("Sales", item.sailValue)
                         )
                         .interpolationMethod(.catmullRom)
@@ -42,7 +42,7 @@ struct MainChartView: View {
                     }
                     ForEach(dataLastYear) { item in
                         LineMark(
-                            x: .value("Month", item.date, unit: .month),
+                            x: .value("Time", item.date, unit: .minute),
                             y: .value("Sales", item.sailValue)
                         )
                         .interpolationMethod(.catmullRom)
@@ -51,15 +51,18 @@ struct MainChartView: View {
                     }
                 }
                 .chartXAxis {
-                    AxisMarks(position: .bottom, values: .stride(by: .month)) { _ in
-                        AxisValueLabel(format: .dateTime.month(.abbreviated)).font(Fonts.montserrat(ofSize: 12)).foregroundStyle(Colors.Grey)
+                    AxisMarks(position: .bottom, values: .stride(by: .hour)) { _ in
+                        AxisValueLabel(format: .dateTime.hour())
+                            .font(Fonts.montserrat(ofSize: 12)).foregroundStyle(Colors.Grey)
                     }
                 }
                 .chartYAxis {
-                    AxisMarks(position: .leading, values: .stride(by: 200)) { value in
+                    AxisMarks(position: .leading, values: .stride(by: 1)) { value in
                         AxisGridLine(stroke: StrokeStyle(lineWidth: 1, dash: [5, 5]))
                             .foregroundStyle(Colors.DarkGrey)
-                        AxisValueLabel().font(Fonts.montserrat(ofSize: 12)).foregroundStyle(Colors.Grey)
+                        AxisValueLabel()
+                            .font(Fonts.montserrat(ofSize: 12))
+                            .foregroundStyle(Colors.Grey)
                     }
                 }
             }
@@ -67,7 +70,7 @@ struct MainChartView: View {
                 Chart {
                     ForEach(dataCurrentYear) { item in
                         AreaMark(
-                            x: .value("Month", item.date, unit: .month),
+                            x: .value("Time", item.date, unit: .minute),
                             y: .value("Sales", item.sailValue)
                         )
                         .interpolationMethod(.catmullRom)
@@ -81,16 +84,16 @@ struct MainChartView: View {
                     }
                     ForEach(dataCurrentYear) { item in
                         LineMark(
-                            x: .value("Month", item.date, unit: .month),
+                            x: .value("Time", item.date, unit: .minute),
                             y: .value("Sales", item.sailValue)
                         )
                         .foregroundStyle(Colors.Purple)
                         .interpolationMethod(.catmullRom)
                         .lineStyle(StrokeStyle(lineWidth: 3))
                     }
-                    if let selectedItem = dataCurrentYear.first(where: { Calendar.current.component(.month, from: $0.date) == targetMonth }) {
+                    if let selectedItem = dataCurrentYear.first(where: { Calendar.current.component(.minute, from: $0.date) == targetMonth }) {
                         PointMark(
-                            x: .value("Month", selectedItem.date, unit: .month),
+                            x: .value("Time", selectedItem.date, unit: .minute),
                             y: .value("Sales", selectedItem.sailValue)
                         )
                         .symbol {
@@ -124,7 +127,7 @@ struct MainChartView: View {
             }
         }
     }
-    private func findClosestDataPoint(for month: Int, in data: [SalesOfYear]) -> SalesOfYear? {
+    private func findClosestDataPoint(for month: Int, in data: [NewsOfDay]) -> NewsOfDay? {
         let calendar = Calendar.current
         
         return data.min { (item1, item2) -> Bool in

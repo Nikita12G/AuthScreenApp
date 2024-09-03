@@ -10,28 +10,28 @@ import Charts
 
 struct MainChartDetailView: View {
     
-    private var dataLastYear: [SalesOfYear]
-    private var dataCurrentYear: [SalesOfYear]
-    private var percentageChange: Int
+    private var dataLastYear: [NewsOfDay]
+    private var dataCurrentYear: [NewsOfDay]
+    private var articleDifference: Int
     @Binding private var targetMonth: Int
     
-    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear], percentageChange: Int, targetMonth: Binding<Int>) {
+    init(dataLastYear: [NewsOfDay], dataCurrentYear: [NewsOfDay], articleDifference: Int, targetMonth: Binding<Int>) {
         self.dataLastYear = dataLastYear
         self.dataCurrentYear = dataCurrentYear
-        self.percentageChange = percentageChange
+        self.articleDifference = articleDifference
         self._targetMonth = targetMonth
     }
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(Constants.sailsValueTitle)
+            Text(Constants.newsCount)
                 .font(Fonts.montserrat(ofSize: 18))
                 .fontWeight(.bold)
                 .foregroundStyle(Colors.White)
             HStack {
-                Text("\(percentageChange)\(Constants.sailsPercent)")
+                Text("\(articleDifference)")
                     .font(Fonts.montserrat(ofSize: 14))
-                    .foregroundStyle(percentageChange > 0 ? Colors.Green : Colors.Red)
+                    .foregroundStyle(articleDifference > 0 ? Colors.Green : Colors.Red)
                 Text(Constants.sailsRelative)
                     .font(Fonts.montserrat(ofSize: 14))
                     .foregroundStyle(Colors.Grey)
