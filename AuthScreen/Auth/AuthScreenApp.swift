@@ -14,7 +14,7 @@ struct AuthScreenApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainContentView()
+            AuthInputPhoneView(phoneNumber: $phoneNumber, inputState: .constant(.regular))
         }
     }
 }
