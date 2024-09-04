@@ -9,7 +9,7 @@ import SwiftUI
 
 enum Route: Hashable {
     case inputCode
-    case waitScreen
+    case mainScreen
 }
 
 class Router: ObservableObject {

@@ -22,7 +22,7 @@ struct AuthScreen: App {
                         case .inputCode:
                             AuthInputCodeContentView(phoneNumber: $phoneNumber).applyBackground()
                             // TODO: - Only for tests !!!
-                        case .waitScreen:
+                        case .mainScreen:
                             AuthWaitView().applyBackground()
                         }
                     }

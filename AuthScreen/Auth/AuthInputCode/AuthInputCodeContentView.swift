@@ -60,7 +60,7 @@ struct AuthInputCodeContentView: View {
                         inputState = .success
                         textFieldIsFocused = false
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                            router.navigate(to: .waitScreen)
+                            router.navigate(to: .mainScreen)
                         }
                     } else {
                         inputState = .error
