@@ -7,18 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1DEE6AA2C45034B0003733B /* AuthScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6A92C45034B0003733B /* AuthScreenApp.swift */; };
-		A1DEE6AC2C45034B0003733B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6AB2C45034B0003733B /* ContentView.swift */; };
-		A1DEE6AE2C45034C0003733B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6AD2C45034C0003733B /* Assets.xcassets */; };
-		A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */; };
+		A1E3668D2C4512DC0019B1C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E366752C4512DB0019B1C6 /* Extensions.swift */; };
+		A1E3668E2C4512DC0019B1C6 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E366772C4512DB0019B1C6 /* Helpers.swift */; };
+		A1E3668F2C4512DC0019B1C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E366792C4512DB0019B1C6 /* Preview Assets.xcassets */; };
+		A1E366902C4512DC0019B1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E3667B2C4512DB0019B1C6 /* Assets.xcassets */; };
+		A1E366912C4512DC0019B1C6 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3667C2C4512DB0019B1C6 /* Fonts.swift */; };
+		A1E366922C4512DC0019B1C6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3667D2C4512DB0019B1C6 /* Colors.swift */; };
+		A1E366932C4512DC0019B1C6 /* AuthInputCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E366802C4512DC0019B1C6 /* AuthInputCodeTextField.swift */; };
+		A1E366942C4512DC0019B1C6 /* AuthInputCodeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E366812C4512DC0019B1C6 /* AuthInputCodeContentView.swift */; };
+		A1E366952C4512DC0019B1C6 /* InputViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E366822C4512DC0019B1C6 /* InputViewState.swift */; };
+		A1E366962C4512DC0019B1C6 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E366832C4512DC0019B1C6 /* AuthRouter.swift */; };
+		A1E366972C4512DC0019B1C6 /* AuthGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E366842C4512DC0019B1C6 /* AuthGradientView.swift */; };
+		A1E3669B2C4512DC0019B1C6 /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E366892C4512DC0019B1C6 /* AuthScreen.swift */; };
+		A1E3669C2C4512DC0019B1C6 /* AuthWaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3668A2C4512DC0019B1C6 /* AuthWaitView.swift */; };
+		A1E3669D2C4512DC0019B1C6 /* ConfirmCodeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3668C2C4512DC0019B1C6 /* ConfirmCodeTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1DEE6A62C45034B0003733B /* AuthScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1DEE6A92C45034B0003733B /* AuthScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenApp.swift; sourceTree = "<group>"; };
-		A1DEE6AB2C45034B0003733B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A1DEE6AD2C45034C0003733B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1E366752C4512DB0019B1C6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A1E366772C4512DB0019B1C6 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		A1E366792C4512DB0019B1C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1E3667B2C4512DB0019B1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1E3667C2C4512DB0019B1C6 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		A1E3667D2C4512DB0019B1C6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A1E366802C4512DC0019B1C6 /* AuthInputCodeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputCodeTextField.swift; sourceTree = "<group>"; };
+		A1E366812C4512DC0019B1C6 /* AuthInputCodeContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputCodeContentView.swift; sourceTree = "<group>"; };
+		A1E366822C4512DC0019B1C6 /* InputViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewState.swift; sourceTree = "<group>"; };
+		A1E366832C4512DC0019B1C6 /* AuthRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		A1E366842C4512DC0019B1C6 /* AuthGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthGradientView.swift; sourceTree = "<group>"; };
+		A1E366892C4512DC0019B1C6 /* AuthScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
+		A1E3668A2C4512DC0019B1C6 /* AuthWaitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthWaitView.swift; sourceTree = "<group>"; };
+		A1E3668C2C4512DC0019B1C6 /* ConfirmCodeTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmCodeTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +71,87 @@
 		A1DEE6A82C45034B0003733B /* AuthScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A1DEE6A92C45034B0003733B /* AuthScreenApp.swift */,
-				A1DEE6AB2C45034B0003733B /* ContentView.swift */,
-				A1DEE6AD2C45034C0003733B /* Assets.xcassets */,
-				A1DEE6AF2C45034C0003733B /* Preview Content */,
+				A1E3667E2C4512DC0019B1C6 /* Auth */,
+				A1E366742C4512DB0019B1C6 /* Exstentions */,
+				A1E366762C4512DB0019B1C6 /* Helpers */,
+				A1E3667A2C4512DB0019B1C6 /* Style */,
+				A1E3668B2C4512DC0019B1C6 /* Timer */,
+				A1E366782C4512DB0019B1C6 /* Preview Content */,
 			);
 			path = AuthScreen;
 			sourceTree = "<group>";
 		};
-		A1DEE6AF2C45034C0003733B /* Preview Content */ = {
+		A1E366742C4512DB0019B1C6 /* Exstentions */ = {
 			isa = PBXGroup;
 			children = (
-				A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */,
+				A1E366752C4512DB0019B1C6 /* Extensions.swift */,
 			);
-			path = "Preview Content";
+			path = Exstentions;
+			sourceTree = "<group>";
+		};
+		A1E366762C4512DB0019B1C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A1E366772C4512DB0019B1C6 /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A1E366782C4512DB0019B1C6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1E366792C4512DB0019B1C6 /* Preview Assets.xcassets */,
+			);
+			name = "Preview Content";
+			path = "../../Pp/Ex/WBAuthScreen/WBAuthScreen/Preview Content";
+			sourceTree = "<group>";
+		};
+		A1E3667A2C4512DB0019B1C6 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				A1E3667B2C4512DB0019B1C6 /* Assets.xcassets */,
+				A1E3667C2C4512DB0019B1C6 /* Fonts.swift */,
+				A1E3667D2C4512DB0019B1C6 /* Colors.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		A1E3667E2C4512DC0019B1C6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A1E366892C4512DC0019B1C6 /* AuthScreen.swift */,
+				A1E366832C4512DC0019B1C6 /* AuthRouter.swift */,
+				A1E366842C4512DC0019B1C6 /* AuthGradientView.swift */,
+				A1E3668A2C4512DC0019B1C6 /* AuthWaitView.swift */,
+				A1E3667F2C4512DC0019B1C6 /* AuthInputCode */,
+				A1E3669E2C45133B0019B1C6 /* Models */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A1E3667F2C4512DC0019B1C6 /* AuthInputCode */ = {
+			isa = PBXGroup;
+			children = (
+				A1E366802C4512DC0019B1C6 /* AuthInputCodeTextField.swift */,
+				A1E366812C4512DC0019B1C6 /* AuthInputCodeContentView.swift */,
+			);
+			path = AuthInputCode;
+			sourceTree = "<group>";
+		};
+		A1E3668B2C4512DC0019B1C6 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				A1E3668C2C4512DC0019B1C6 /* ConfirmCodeTimer.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		A1E3669E2C45133B0019B1C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1E366822C4512DC0019B1C6 /* InputViewState.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */,
-				A1DEE6AE2C45034C0003733B /* Assets.xcassets in Resources */,
+				A1E366902C4512DC0019B1C6 /* Assets.xcassets in Resources */,
+				A1E3668F2C4512DC0019B1C6 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +224,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DEE6AC2C45034B0003733B /* ContentView.swift in Sources */,
-				A1DEE6AA2C45034B0003733B /* AuthScreenApp.swift in Sources */,
+				A1E366952C4512DC0019B1C6 /* InputViewState.swift in Sources */,
+				A1E366942C4512DC0019B1C6 /* AuthInputCodeContentView.swift in Sources */,
+				A1E3668D2C4512DC0019B1C6 /* Extensions.swift in Sources */,
+				A1E366922C4512DC0019B1C6 /* Colors.swift in Sources */,
+				A1E366912C4512DC0019B1C6 /* Fonts.swift in Sources */,
+				A1E366972C4512DC0019B1C6 /* AuthGradientView.swift in Sources */,
+				A1E3669B2C4512DC0019B1C6 /* AuthScreen.swift in Sources */,
+				A1E3669C2C4512DC0019B1C6 /* AuthWaitView.swift in Sources */,
+				A1E3668E2C4512DC0019B1C6 /* Helpers.swift in Sources */,
+				A1E3669D2C4512DC0019B1C6 /* ConfirmCodeTimer.swift in Sources */,
+				A1E366962C4512DC0019B1C6 /* AuthRouter.swift in Sources */,
+				A1E366932C4512DC0019B1C6 /* AuthInputCodeTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +377,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +407,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
