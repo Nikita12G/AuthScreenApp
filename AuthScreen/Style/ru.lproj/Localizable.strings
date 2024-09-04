@@ -1,0 +1,35 @@
+/*
+  Localizable.ru.strings
+  AuthScreen
+
+  Created by Никита Гуляев on 31.07.2024.
+  
+*/
+"fonts.montserrat" = "Montserrat";
+
+"authorisation.title" = "Авторизация";
+"authorisation.subTitle" = "Вход по номеру телефона";
+"authorisation.requestTitle" = "Запросить код";
+"authorisation.phoneMask" = "+7 (___) ___-__-__";
+"authorisation.errorStateTitle" = "Некорректный формат номера";
+"authorisation.phoneFormat" = "+X (XXX) XXX-XX-XX";
+
+"main.movingTrendTitle" = "Движение тренда в 2024";
+"main.contactsTitle" = "Данные для связи";
+"main.month" = "Месяц";
+"main.marketingManagersTitle" = "Маркетинговые специалисты";
+"main.contactListSailsProgress" = "Выполнено продаж: ";
+"main.contactListSailsComplete" = "Выполнено";
+"main.sailsValue" = "Количество продаж";
+"main.sailsPercent" = "% продаж"; 
+"main.sailsRelative" = "сравнительно с прошлым годом";
+"main.externalTraffic" = "Внешний трафик";
+"main.fromAllPurchases" = "От всех покупок";
+"main.peoplesShort" = "чел.";
+"main.newClients" = "Новые клиенты";
+"main.totalFromExternalTraffic" = "Всего с внешнего \nтрафика";
+"main.supportTitle" = "ИИ в техподдержке";
+"main.needHelp" = "Нужна помощь";
+"main.statisticTitle" = "Статистика";
+"main.showWidgets" = "Отображение виджетов";
+"main.shareTitile" = "Поделиться";

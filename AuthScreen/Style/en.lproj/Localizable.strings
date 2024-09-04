@@ -1,0 +1,35 @@
+/*
+  LocalizableEN.strings
+  AuthScreen
+
+  Created by Никита Гуляев on 31.07.2024.
+  
+*/
+"fonts.montserrat" = "Montserrat";
+
+"authorisation.title" = "Autorisation";
+"authorisation.subTitle" = "Login by phone number";
+"authorisation.requestTitle" = "Request code";
+"authorisation.phoneMask" = "+7 (___) ___-__-__";
+"authorisation.errorStateTitle" = "Incorrect number format";
+"authorisation.phoneFormat" = "+X (XXX) XXX-XX-XX";
+
+"main.movingTrendTitle" = "Moving Trend in 2024";
+"main.contactsTitle" = "Contact numbers";
+"main.month" = "Month";
+"main.marketingManagersTitle" = "Marketing managers";
+"main.contactListSailsProgress" = "Sails progress: ";
+"main.contactListSailsComplete" = "Sails complite";
+"main.sailsValue" = "Sails value";
+"main.sailsPercent" = "% sails";
+"main.sailsRelative" = "relative to last year";
+"main.externalTraffic" = "External traffic";
+"main.fromAllPurchases" = "From all purchases";
+"main.peoplesShort" = "peip.";
+"main.newClients" = "New clients";
+"main.totalFromExternalTraffic" = "Total from external \ntraffic";
+"main.supportTitle" = "AI in support";
+"main.needHelp" = "Need help";
+"main.statisticTitle" = "Statistic";
+"main.showWidgets" = "Show widgets";
+"main.shareTitile" = "Share";
