@@ -16,7 +16,7 @@ struct MainLeftSideBarView: View {
                 Image("UserAvatar")
                     .resizable()
                     .frame(width: 44, height: 44)
-            }.padding(EdgeInsets(top: 32, leading: 18, bottom: 0, trailing: 18))
+            }.padding(EdgeInsets(top: 72, leading: 18, bottom: 0, trailing: 18))
             Spacer()
             VStack(spacing: 56) {
                 Button {
