@@ -1,20 +1,20 @@
 //
 //  AuthGradientView.swift
-//  WBAuthScreen
+//  AuthScreen
 //
-//  Created by Никита Гуляев on 01.07.2024.
+//  Created by Никита Гуляев on 04.09.2024.
 //
 
 import SwiftUI
 
-struct AuthGradientView: View {
-    var body: some View {
-        LinearGradient(gradient: Gradient(colors: [Colors.PurpleFirstGradient.opacity(94), Colors.PurpleSecondGradient.opacity(49)]),
-                       startPoint: .leading,
-                       endPoint: .trailing)
-    }
-}
+ struct AuthGradientView: View {
+     var body: some View {
+         LinearGradient(gradient: Gradient(colors: [Colors.PurpleFirstGradient.opacity(94), Colors.PurpleSecondGradient.opacity(49)]),
+                        startPoint: .leading,
+                        endPoint: .trailing)
+     }
+ }
 
-#Preview {
-    AuthGradientView()
-}
+ #Preview {
+     AuthGradientView()
+ }

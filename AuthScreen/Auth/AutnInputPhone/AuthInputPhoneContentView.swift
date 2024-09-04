@@ -19,7 +19,7 @@ struct AuthInputPhoneContentView: View {
     
     var body: some View {
         VStack {
-            Text(Constants.authorisationTitle)
+            Text("Авторизация")
                 .font(Fonts.montserrat(ofSize: 24))
                 .foregroundColor(Colors.White)
                 .bold()
@@ -27,16 +27,13 @@ struct AuthInputPhoneContentView: View {
             
             Image("UserAvatar")
             
-            Text(Constants.authorisationSubtitle)
+            Text("Вход по номеру телефона")
                 .font(Fonts.montserrat(ofSize: 24))
                 .foregroundColor(Colors.White)
                 .padding(EdgeInsets(top: 16, leading: 0, bottom: 32, trailing: 0))
             
             AuthInputPhoneView(phoneNumber: $phoneNumber, inputState: $inputState)
                 .padding(EdgeInsets(top: 0, leading: 24, bottom: 24, trailing: 24))
-                .onChange(of: phoneNumber) { _, _ in
-                    inputState = .regular
-                }
             
             Button {
                 if phoneIsValid(phone: phoneNumber) {
@@ -45,7 +42,7 @@ struct AuthInputPhoneContentView: View {
                     inputState = .error
                 }
             } label: {
-                Text(Constants.authorisationRequestTitle)
+                Text("Запросить код")
                     .padding(14)
             }
             .frame(maxWidth: .infinity)

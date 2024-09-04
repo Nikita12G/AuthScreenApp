@@ -11,7 +11,7 @@ struct AuthInputPhoneTextField: View {
     
     @Binding private var text: String
     @State private var phoneNumber: String = ""
-    @State private var phoneMask = Constants.authorisationPhoneMask
+    @State private var phoneMask = "+7 (___) ___-__-__"
     
     
     init(text: Binding<String>) {
@@ -24,7 +24,7 @@ struct AuthInputPhoneTextField: View {
                 .font(Fonts.montserrat(ofSize: 16))
                 .foregroundColor(Colors.White)
                 .keyboardType(.numberPad)
-                .onChange(of: phoneNumber) { _, newValue in
+                .onChange(of: phoneNumber) { newValue in
                     phoneNumber = newValue.formatPhoneNumber()
                     self.text = newValue
                 }

@@ -44,7 +44,6 @@ enum Colors {
     static var Grey: Color {
         Color(r: 160, g: 174, b: 192)
     }
-    
 }
 
 extension Color {
