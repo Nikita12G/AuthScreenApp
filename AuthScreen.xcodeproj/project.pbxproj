@@ -25,7 +25,7 @@
 		A1DA8EC02C7895160061521F /* MainChartDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA8EBF2C7895160061521F /* MainChartDetailView.swift */; };
 		A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */; };
 		A1DEE6E92C4505200003733B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6D62C45051F0003733B /* Helpers.swift */; };
-		A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */; };
+		A1DEE6EC2C4505200003733B /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DC2C4505200003733B /* AuthScreen.swift */; };
 		A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DE2C4505200003733B /* AuthInputPhoneContentView.swift */; };
 		A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DF2C4505200003733B /* AuthInputPhoneTextField.swift */; };
 		A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E02C4505200003733B /* AuthInputPhoneView.swift */; };
@@ -77,7 +77,7 @@
 		A1DEE6A62C45034B0003733B /* AuthScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1DEE6D62C45051F0003733B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreenApp.swift; sourceTree = "<group>"; };
+		A1DEE6DC2C4505200003733B /* AuthScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
 		A1DEE6DE2C4505200003733B /* AuthInputPhoneContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputPhoneContentView.swift; sourceTree = "<group>"; };
 		A1DEE6DF2C4505200003733B /* AuthInputPhoneTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputPhoneTextField.swift; sourceTree = "<group>"; };
 		A1DEE6E02C4505200003733B /* AuthInputPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputPhoneView.swift; sourceTree = "<group>"; };
@@ -224,7 +224,7 @@
 		A1DEE6DB2C4505200003733B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */,
+				A1DEE6DC2C4505200003733B /* AuthScreen.swift */,
 				A1DEE6DD2C4505200003733B /* AuthInputPhone */,
 				A1DEE6E12C4505200003733B /* AuthRouter.swift */,
 				A1DEE6E22C4505200003733B /* AuthGradientView.swift */,
@@ -459,7 +459,7 @@
 				A1DEE6F12C4505200003733B /* AuthGradientView.swift in Sources */,
 				A11C79CF2C74AB960092CFEE /* MainContactDetailView.swift in Sources */,
 				A1EC2AE72C5D02F200014EA4 /* MainCirclesChartView.swift in Sources */,
-				A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */,
+				A1DEE6EC2C4505200003733B /* AuthScreen.swift in Sources */,
 				A1DEE6E92C4505200003733B /* Helpers.swift in Sources */,
 				A1F912032C64D78700D7CFC7 /* CreatingApplicationView.swift in Sources */,
 				A1DEE6F32C4505200003733B /* Fonts.swift in Sources */,
