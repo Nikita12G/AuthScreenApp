@@ -13,7 +13,7 @@ struct MainContentView: View {
     @State private var dataCurrentYear = NewsOfDay.currentYear()
     @State private var percentageChange = NewsOfDay.percentageChange()
     @State private var targetMonth = Date().month
-    @State private var showWidgets = false
+    @State private var showWidgets = true
     @StateObject private var viewModel = NewsViewModel()
     
     var body: some View {

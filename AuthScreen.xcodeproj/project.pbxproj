@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A11C79CF2C74AB960092CFEE /* MainContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */; };
+		A12A62F22C898B670084F452 /* AuthInputCodeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F12C898B670084F452 /* AuthInputCodeContentView.swift */; };
+		A12A62F42C898B8D0084F452 /* AuthInputCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F32C898B8D0084F452 /* AuthInputCodeTextField.swift */; };
+		A12A62F72C898BAE0084F452 /* InputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F62C898BAE0084F452 /* InputState.swift */; };
+		A12A62FA2C898BFE0084F452 /* ConfirmCodeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F92C898BFE0084F452 /* ConfirmCodeTimer.swift */; };
 		A1512E622C5A6B0000860F0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E612C5A6B0000860F0C /* Constants.swift */; };
 		A1512E662C5A7C9600860F0C /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E652C5A7C9600860F0C /* MainContentView.swift */; };
 		A1512E722C5A81EA00860F0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1512E742C5A81EA00860F0C /* Localizable.strings */; };
@@ -58,6 +62,10 @@
 
 /* Begin PBXFileReference section */
 		A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainContactDetailView.swift; path = ../../Main/Views/MainContactDetailView.swift; sourceTree = "<group>"; };
+		A12A62F12C898B670084F452 /* AuthInputCodeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputCodeContentView.swift; sourceTree = "<group>"; };
+		A12A62F32C898B8D0084F452 /* AuthInputCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputCodeTextField.swift; sourceTree = "<group>"; };
+		A12A62F62C898BAE0084F452 /* InputState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputState.swift; sourceTree = "<group>"; };
+		A12A62F92C898BFE0084F452 /* ConfirmCodeTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeTimer.swift; sourceTree = "<group>"; };
 		A1512E612C5A6B0000860F0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1512E652C5A7C9600860F0C /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainContentView.swift; path = ../Main/MainContentView.swift; sourceTree = "<group>"; };
 		A1512E732C5A81EA00860F0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -132,6 +140,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A12A62F02C898B390084F452 /* AuthInputCode */ = {
+			isa = PBXGroup;
+			children = (
+				A12A62F12C898B670084F452 /* AuthInputCodeContentView.swift */,
+				A12A62F32C898B8D0084F452 /* AuthInputCodeTextField.swift */,
+			);
+			path = AuthInputCode;
+			sourceTree = "<group>";
+		};
+		A12A62F52C898B9E0084F452 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A12A62F62C898BAE0084F452 /* InputState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A12A62F82C898BF80084F452 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				A12A62F92C898BFE0084F452 /* ConfirmCodeTimer.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		A1512E672C5A7CCA00860F0C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +230,7 @@
 				A1F911F32C64D49700D7CFC7 /* TestViews */,
 				A1DEE6E72C4505200003733B /* Exstentions */,
 				A1DEE6D52C45051F0003733B /* Helpers */,
+				A12A62F82C898BF80084F452 /* Timer */,
 				A1DEE6E32C4505200003733B /* Style */,
 				A1DEE6AF2C45034C0003733B /* Preview Content */,
 			);
@@ -225,9 +259,11 @@
 			isa = PBXGroup;
 			children = (
 				A1DEE6DC2C4505200003733B /* AuthScreen.swift */,
-				A1DEE6DD2C4505200003733B /* AuthInputPhone */,
 				A1DEE6E12C4505200003733B /* AuthRouter.swift */,
 				A1DEE6E22C4505200003733B /* AuthGradientView.swift */,
+				A12A62F02C898B390084F452 /* AuthInputCode */,
+				A1DEE6DD2C4505200003733B /* AuthInputPhone */,
+				A12A62F52C898B9E0084F452 /* Models */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -457,6 +493,7 @@
 				A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */,
 				A1F9120A2C65068500D7CFC7 /* TrendProvider.swift in Sources */,
 				A1DEE6F12C4505200003733B /* AuthGradientView.swift in Sources */,
+				A12A62F22C898B670084F452 /* AuthInputCodeContentView.swift in Sources */,
 				A11C79CF2C74AB960092CFEE /* MainContactDetailView.swift in Sources */,
 				A1EC2AE72C5D02F200014EA4 /* MainCirclesChartView.swift in Sources */,
 				A1DEE6EC2C4505200003733B /* AuthScreen.swift in Sources */,
@@ -464,10 +501,13 @@
 				A1F912032C64D78700D7CFC7 /* CreatingApplicationView.swift in Sources */,
 				A1DEE6F32C4505200003733B /* Fonts.swift in Sources */,
 				A1EC2AEB2C5D125900014EA4 /* MonthStatistic.swift in Sources */,
+				A12A62F72C898BAE0084F452 /* InputState.swift in Sources */,
 				A1F911F92C64D56600D7CFC7 /* ChatContentView.swift in Sources */,
 				A1DEE6F52C4505200003733B /* Extensions.swift in Sources */,
 				A1F911F72C64D4D100D7CFC7 /* UserContentView.swift in Sources */,
+				A12A62FA2C898BFE0084F452 /* ConfirmCodeTimer.swift in Sources */,
 				A1DA8EC02C7895160061521F /* MainChartDetailView.swift in Sources */,
+				A12A62F42C898B8D0084F452 /* AuthInputCodeTextField.swift in Sources */,
 				A16966162C62631300E0470B /* MainContactsListView.swift in Sources */,
 				A1512E622C5A6B0000860F0C /* Constants.swift in Sources */,
 			);

@@ -2,7 +2,7 @@
 //  AuthScreen.swift
 //  WBAuthScreen
 //
-//  Created by Никита Гуляев on 15.07.2024.
+//  Created by Никита Гуляев on 30.06.2024.
 //
 
 import SwiftUI
@@ -11,11 +11,24 @@ import SwiftUI
 struct AuthScreen: App {
     
     @State private var phoneNumber = ""
+
+    @ObservedObject private var router = Router.shared
     
     var body: some Scene {
         WindowGroup {
-            MainContentView()
+            NavigationStack(path: $router.path) {
+                AuthInputPhoneContentView(phoneNumber: $phoneNumber).applyBackground()
+                    .navigationDestination(for: Route.self) { route in
+                        switch route {
+                        case .inputPhone:
+                            AuthInputPhoneContentView(phoneNumber: $phoneNumber).applyBackground()
+                        case .inputCode:
+                            AuthInputCodeContentView(phoneNumber: $phoneNumber).applyBackground()
+                        case .mainScreen:
+                            MainContentView()
+                        }
+                    }
+            }
         }
     }
 }
-
