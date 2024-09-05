@@ -29,11 +29,9 @@ enum Constants {
     contactsTitle = NSLocalizedString("main.contactsTitle", comment: ""),
     contactListSailsProgress = NSLocalizedString("main.contactListSailsProgress", comment: ""),
     contactListSailsComplete = NSLocalizedString("main.contactListSailsComplete", comment: ""),
-    newsCount = NSLocalizedString("main.newsCount", comment: ""),
     sailsPercent = NSLocalizedString("main.sailsPercent", comment: ""),
     sailsRelative = NSLocalizedString("main.sailsRelative", comment: ""),
     externalTraffic = NSLocalizedString("main.externalTraffic", comment: ""),
-    fromAllPurchases = NSLocalizedString("main.fromAllPurchases", comment: ""),
     peoplesShort = NSLocalizedString("main.peoplesShort", comment: ""),
     newClients = NSLocalizedString("main.newClients", comment: ""),
     totalFromExternalTraffic = NSLocalizedString("main.totalFromExternalTraffic", comment: ""),
@@ -41,5 +39,9 @@ enum Constants {
     needHelp = NSLocalizedString("main.needHelp", comment: ""),
     statisticTitle = NSLocalizedString("main.statisticTitle", comment: ""),
     showWidgets = NSLocalizedString("main.showWidgets", comment: ""),
-    shareTitle = NSLocalizedString("main.shareTitile", comment: "")
+    shareTitle = NSLocalizedString("main.shareTitile", comment: ""),
+    
+    newsCount = NSLocalizedString("main.newsCount", comment: ""),
+    allNews = NSLocalizedString("main.allNews", comment: ""),
+    loadNews = NSLocalizedString("main.loadNews", comment: "")
 }

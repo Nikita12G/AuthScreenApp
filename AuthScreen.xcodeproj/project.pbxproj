@@ -12,6 +12,7 @@
 		A12A62F42C898B8D0084F452 /* AuthInputCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F32C898B8D0084F452 /* AuthInputCodeTextField.swift */; };
 		A12A62F72C898BAE0084F452 /* InputState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F62C898BAE0084F452 /* InputState.swift */; };
 		A12A62FA2C898BFE0084F452 /* ConfirmCodeTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F92C898BFE0084F452 /* ConfirmCodeTimer.swift */; };
+		A12A62FC2C8996B40084F452 /* SalesOfYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62FB2C8996B40084F452 /* SalesOfYear.swift */; };
 		A1512E622C5A6B0000860F0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E612C5A6B0000860F0C /* Constants.swift */; };
 		A1512E662C5A7C9600860F0C /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E652C5A7C9600860F0C /* MainContentView.swift */; };
 		A1512E722C5A81EA00860F0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1512E742C5A81EA00860F0C /* Localizable.strings */; };
@@ -66,6 +67,7 @@
 		A12A62F32C898B8D0084F452 /* AuthInputCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputCodeTextField.swift; sourceTree = "<group>"; };
 		A12A62F62C898BAE0084F452 /* InputState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputState.swift; sourceTree = "<group>"; };
 		A12A62F92C898BFE0084F452 /* ConfirmCodeTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeTimer.swift; sourceTree = "<group>"; };
+		A12A62FB2C8996B40084F452 /* SalesOfYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesOfYear.swift; sourceTree = "<group>"; };
 		A1512E612C5A6B0000860F0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1512E652C5A7C9600860F0C /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainContentView.swift; path = ../Main/MainContentView.swift; sourceTree = "<group>"; };
 		A1512E732C5A81EA00860F0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				A16966172C62635500E0470B /* Contact.swift */,
 				A1DA8E542C7893DA0061521F /* NewsOfDay.swift */,
 				A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */,
+				A12A62FB2C8996B40084F452 /* SalesOfYear.swift */,
 			);
 			name = Models;
 			path = ../Main/Models;
@@ -482,6 +485,7 @@
 				A1EC2AE92C5D11E000014EA4 /* MainMonthStatisticView.swift in Sources */,
 				A19B21A82C8187C1008BDC9D /* MainSupportView.swift in Sources */,
 				A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */,
+				A12A62FC2C8996B40084F452 /* SalesOfYear.swift in Sources */,
 				A1CF7B792C7C7820004F8B34 /* MainChartView.swift in Sources */,
 				A1F18E622C7EF90600547CEB /* MainPointView.swift in Sources */,
 				A163B58B2C5BDB4D007C44E0 /* Trends.swift in Sources */,

@@ -10,12 +10,12 @@ import Charts
 
 struct MainChartDetailView: View {
     
-    private var dataLastYear: [NewsOfDay]
-    private var dataCurrentYear: [NewsOfDay]
+    private var dataLastYear: [SalesOfYear]
+    private var dataCurrentYear: [SalesOfYear]
     private var articleDifference: Int
     @Binding private var targetMonth: Int
     
-    init(dataLastYear: [NewsOfDay], dataCurrentYear: [NewsOfDay], articleDifference: Int, targetMonth: Binding<Int>) {
+    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear], articleDifference: Int, targetMonth: Binding<Int>) {
         self.dataLastYear = dataLastYear
         self.dataCurrentYear = dataCurrentYear
         self.articleDifference = articleDifference

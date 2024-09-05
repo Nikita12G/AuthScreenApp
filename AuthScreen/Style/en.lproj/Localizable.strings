@@ -20,11 +20,9 @@
 "main.marketingManagersTitle" = "Marketing managers";
 "main.contactListSailsProgress" = "Sails progress: ";
 "main.contactListSailsComplete" = "Sails complite";
-"main.newsCount" = "News count";
 "main.sailsPercent" = "% sails";
 "main.sailsRelative" = "relative to last year";
 "main.externalTraffic" = "External traffic";
-"main.fromAllPurchases" = "From all purchases";
 "main.peoplesShort" = "peip.";
 "main.newClients" = "New clients";
 "main.totalFromExternalTraffic" = "Total from external \ntraffic";
@@ -33,3 +31,7 @@
 "main.statisticTitle" = "Statistic";
 "main.showWidgets" = "Show widgets";
 "main.shareTitile" = "Share";
+
+"main.newsCount" = "News count of topic";
+"main.allNews" = "All news";
+"main.loadNews" = "Load news";

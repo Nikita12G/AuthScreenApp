@@ -8,33 +8,40 @@
 import SwiftUI
 
 struct MainExternalView: View {
-    @Binding private var targetMonth: Int
-    @State private var externalData = ExternalTraffic.generateData(forMonth: Date().month)
+    @Binding private var topic: String
+    private var topicsForNews: [String]
+    private var allArticleCount: Int?
+    private var topicsArticleCount: Int?
+    private var progressValue: CGFloat?
     
-    init(targetMonth: Binding<Int>) {
-        self._targetMonth = targetMonth
+    init(topic: Binding<String>, topicsForNews: [String], allArticleCount: Int?, topicsArticleCount: Int?, progressValue: CGFloat?) {
+        self._topic = topic
+        self.topicsForNews = topicsForNews
+        self.allArticleCount = allArticleCount
+        self.topicsArticleCount = topicsArticleCount
+        self.progressValue = progressValue
     }
     
     var body: some View {
         VStack {
             HStack {
-                Text(Constants.externalTraffic)
+                Text(Constants.newsCount)
                     .foregroundStyle(Colors.White)
                     .font(Fonts.montserrat(ofSize: 18))
-                Picker("", selection: $targetMonth) {
-                    ForEach((1...12), id: \.self) { selectedMonth in
-                        Text(Date.formattedString(year: externalData.year, month: selectedMonth).capitalized)
+                Picker("", selection: $topic) {
+                    ForEach(topicsForNews, id: \.self) { topic in
+                        Text(topic)
                     }
                 }.accentColor(Colors.Grey)
                     .font(Fonts.montserrat(ofSize: 14))
-                    .onChange(of: targetMonth) { _, newMonth in
-                        externalData = ExternalTraffic.generateData(forMonth: newMonth)
+                    .onChange(of: topic) { _, newTopic in
+                        topic = newTopic
                     }
             }
             HStack {
                 ZStack {
                     CirclePath()
-                        .trim(from: 0, to: externalData.externalTrafficPercent)
+                        .trim(from: 0.1, to: (progressValue ?? 0))
                         .stroke(
                             AngularGradient(
                                 gradient: Gradient(colors: [Colors.GraphikGreenGradientColor.opacity(0), Colors.GraphikGreenGradientColor.opacity(1)]),
@@ -47,11 +54,11 @@ struct MainExternalView: View {
                         .rotationEffect(Angle(degrees: 90))
                         .frame(width: 190, height: 190)
                     VStack {
-                        Text("\(Int(externalData.externalTrafficPercent * 100)) %")
+                        Text(allArticleCount?.description ?? "0")
                             .font(Fonts.montserrat(ofSize: 36))
                             .foregroundStyle(Colors.White)
-                        Text(Constants.fromAllPurchases)
-                            .font(Fonts.montserrat(ofSize:14))
+                        Text(Constants.allNews)
+                            .font(Fonts.montserrat(ofSize: 14))
                             .foregroundStyle(Colors.Grey)
                     }
                 }
@@ -61,10 +68,10 @@ struct MainExternalView: View {
                             .frame(width: 146, height: 63)
                             .foregroundStyle(Colors.White.opacity(0.04))
                         VStack(alignment: .leading) {
-                            Text("\(externalData.newClientValue) \(Constants.peoplesShort)")
+                            Text(allArticleCount?.description ?? "0")
                                 .font(Fonts.montserrat(ofSize: 16))
                                 .foregroundStyle(Colors.White)
-                            Text(Constants.newClients)
+                            Text(Constants.allNews)
                                 .font(Fonts.montserrat(ofSize: 12))
                                 .foregroundStyle(Colors.Grey)
                         }.padding(12)
@@ -74,10 +81,10 @@ struct MainExternalView: View {
                             .frame(width: 146, height: 78)
                             .foregroundStyle(Colors.White.opacity(0.04))
                         VStack(alignment: .leading) {
-                            Text("\(externalData.allClientValue) \(Constants.peoplesShort)")
+                            Text(topicsArticleCount?.description ?? "0")
                                 .font(Fonts.montserrat(ofSize: 16))
                                 .foregroundStyle(Colors.White)
-                            Text(Constants.totalFromExternalTraffic)
+                            Text(Constants.loadNews)
                                 .font(Fonts.montserrat(ofSize: 12))
                                 .foregroundStyle(Colors.Grey)
                                 .lineLimit(nil)

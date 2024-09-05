@@ -8,7 +8,7 @@ import Foundation
 import OpenAPIClient
 
 class NewsService {
-    func loadNews(page: Int, topic: String, year: String, completion: @escaping ([Article]?, Error?) -> Void) {
+    func loadNews(page: Int, topic: String, year: String, completion: @escaping (ArticleList?, Error?) -> Void) {
         print("Fetching news with parameters:")
         print("Topic: \(topic)")
         print("Year: \(year)")
@@ -31,7 +31,7 @@ class NewsService {
                 } else {
                     print("No articles found.")
                 }
-                completion(data?.articles, nil)
+                completion(data, nil)
             }
         }
     }

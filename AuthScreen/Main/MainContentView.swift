@@ -9,11 +9,13 @@ import SwiftUI
 
 struct MainContentView: View {
     @State private var statistic = Statistic()
-    @State private var dataLastYear = NewsOfDay.lastYear()
-    @State private var dataCurrentYear = NewsOfDay.currentYear()
-    @State private var percentageChange = NewsOfDay.percentageChange()
+    @State private var dataLastYear = SalesOfYear.lastYear()
+    @State private var dataCurrentYear = SalesOfYear.currentYear()
+    @State private var percentageChange = SalesOfYear.percentageChange()
+
     @State private var targetMonth = Date().month
     @State private var showWidgets = true
+    @State private var targetTopic = "iOS 18"
     @StateObject private var viewModel = NewsViewModel()
     
     var body: some View {
@@ -52,11 +54,21 @@ struct MainContentView: View {
                                     .foregroundStyle(Colors.White)
                             })
                         }.padding(EdgeInsets(top: 30, leading: 20, bottom: 24, trailing: 24))
-                        MainChartDetailView(dataLastYear: viewModel.previousMonthData, dataCurrentYear: viewModel.currentMonthData, articleDifference: viewModel.articleDifference, targetMonth: $targetMonth)
+                        MainChartDetailView(dataLastYear: dataLastYear, dataCurrentYear: dataCurrentYear, articleDifference: percentageChange, targetMonth: $targetMonth)
                         HStack {
                             MainContactsListView(isDetailList: true).hidden(!showWidgets)
                             VStack {
-                                MainExternalView(targetMonth: $targetMonth).hidden(!showWidgets)
+                                MainExternalView(
+                                    topic: $targetTopic,
+                                    topicsForNews: viewModel.topicsForNews,
+                                    allArticleCount: viewModel.articleList?.totalResults,
+                                    topicsArticleCount: viewModel.articleList?.articles?.count,
+                                    progressValue: viewModel.progressValue)
+                                    .onChange(of: targetTopic) { _, newTopic in
+                                        targetTopic = newTopic
+                                        viewModel.fetchArticles(targetTopic: newTopic)
+                                    }
+                                    .hidden(!showWidgets)
                                 MainSupportView().hidden(!showWidgets)
                             }
                         }
@@ -69,7 +81,7 @@ struct MainContentView: View {
         }
         .background(Colors.DarkPurple)
         .onAppear {
-            viewModel.fetchArticles(page: 1, topic: "iOS 18", year: "2024")
+            viewModel.fetchArticles(targetTopic: targetTopic)
         }
     }
 }
