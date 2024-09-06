@@ -10,26 +10,22 @@ import Charts
 
 struct MainChartView: View {
     
-    private var dataLastYear: [SalesOfYear]
-    private var dataCurrentYear: [SalesOfYear]
+    @State private var scoredGoals: [GoalsStatistic]
+    @State private var missedGoals: [GoalsStatistic]
     
-    @Binding private var targetMonth: Int
-    @State private var circlePosition: CGPoint = .zero
-    
-    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear], targetMonth: Binding<Int>) {
-        self.dataLastYear = dataLastYear
-        self.dataCurrentYear = dataCurrentYear
-        self._targetMonth = targetMonth
+    init(scoredGoals: [GoalsStatistic], missedGoals: [GoalsStatistic]) {
+        self.scoredGoals = scoredGoals
+        self.missedGoals = missedGoals
     }
     
     var body: some View {
         ZStack {
             ZStack {
                 Chart {
-                    ForEach(dataLastYear) { item in
+                    ForEach(scoredGoals) { item in
                         AreaMark(
-                            x: .value("Month", item.date, unit: .month),
-                            y: .value("Sales", item.sailValue)
+                            x: .value("Time Range", item.startTime),
+                            y: .value("Goals", item.goalValue)
                         )
                         .interpolationMethod(.catmullRom)
                         .foregroundStyle(
@@ -40,10 +36,10 @@ struct MainChartView: View {
                             )
                         )
                     }
-                    ForEach(dataLastYear) { item in
+                    ForEach(scoredGoals) { item in
                         LineMark(
-                            x: .value("Month", item.date, unit: .month),
-                            y: .value("Sales", item.sailValue)
+                            x: .value("Time Range", item.startTime),
+                            y: .value("Goals", item.goalValue)
                         )
                         .interpolationMethod(.catmullRom)
                         .foregroundStyle(Colors.Blue)
@@ -51,12 +47,14 @@ struct MainChartView: View {
                     }
                 }
                 .chartXAxis {
-                    AxisMarks(position: .bottom, values: .stride(by: .month)) { _ in
-                        AxisValueLabel(format: .dateTime.month(.abbreviated)).font(Fonts.montserrat(ofSize: 12)).foregroundStyle(Colors.Grey)
+                    AxisMarks(position: .bottom, values: .stride(by: .minute, count: 15)) { _ in
+                        AxisValueLabel(format: .dateTime.minute())
+                            .font(Fonts.montserrat(ofSize: 12))
+                            .foregroundStyle(Colors.Grey)
                     }
                 }
                 .chartYAxis {
-                    AxisMarks(position: .leading, values: .stride(by: 200)) { value in
+                    AxisMarks(position: .leading, values: .stride(by: 50)) { value in
                         AxisGridLine(stroke: StrokeStyle(lineWidth: 1, dash: [5, 5]))
                             .foregroundStyle(Colors.DarkGrey)
                         AxisValueLabel().font(Fonts.montserrat(ofSize: 12)).foregroundStyle(Colors.Grey)
@@ -65,10 +63,10 @@ struct MainChartView: View {
             }
             ZStack {
                 Chart {
-                    ForEach(dataCurrentYear) { item in
+                    ForEach(missedGoals) { item in
                         AreaMark(
-                            x: .value("Month", item.date, unit: .month),
-                            y: .value("Sales", item.sailValue)
+                            x: .value("Time Range", item.startTime),
+                            y: .value("Goals", item.goalValue)
                         )
                         .interpolationMethod(.catmullRom)
                         .foregroundStyle(
@@ -79,34 +77,14 @@ struct MainChartView: View {
                             )
                         )
                     }
-                    ForEach(dataCurrentYear) { item in
+                    ForEach(missedGoals) { item in
                         LineMark(
-                            x: .value("Month", item.date, unit: .month),
-                            y: .value("Sales", item.sailValue)
+                            x: .value("Time Range", item.startTime),
+                            y: .value("Goals", item.goalValue)
                         )
                         .foregroundStyle(Colors.Purple)
                         .interpolationMethod(.catmullRom)
                         .lineStyle(StrokeStyle(lineWidth: 3))
-                    }
-                    if let selectedItem = dataCurrentYear.first(where: { Calendar.current.component(.month, from: $0.date) == targetMonth }) {
-                        PointMark(
-                            x: .value("Month", selectedItem.date, unit: .month),
-                            y: .value("Sales", selectedItem.sailValue)
-                        )
-                        .symbol {
-                            VStack {
-                                ZStack {
-                                    RoundedRectangle(cornerSize: CGSize(width: 42, height: 28))
-                                        .frame(width: 42, height: 28)
-                                        .foregroundStyle(Colors.White.opacity(0.08))
-                                    Text(findClosestDataPoint(for: targetMonth, in: dataCurrentYear)?.sailValue.description ?? "")
-                                        .font(Fonts.montserrat(ofSize: 14))
-                                        .foregroundStyle(Colors.White)
-                                }
-                                MainPointView()
-                                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
-                            }
-                        }
                     }
                 }
                 .chartYAxis {
@@ -122,16 +100,6 @@ struct MainChartView: View {
                     }
                 }
             }
-        }
-    }
-    private func findClosestDataPoint(for month: Int, in data: [SalesOfYear]) -> SalesOfYear? {
-        let calendar = Calendar.current
-        
-        return data.min { (item1, item2) -> Bool in
-            let month1 = calendar.component(.month, from: item1.date)
-            let month2 = calendar.component(.month, from: item2.date)
-            
-            return abs(month - month1) < abs(month - month2)
         }
     }
 }

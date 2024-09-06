@@ -3,4 +3,54 @@
    uuid = "D6BCDC17-08E5-4532-A197-1D724CCAF691"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97A03D77-F066-4697-89DA-738E1F800C37"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthScreen/Main/Views/MainChartView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "97A03D77-F066-4697-89DA-738E1F800C37 - c51f9176fc43d5a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of static Charts.ChartContentBuilder.buildPartialBlock&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Charts.ChartContent, &#x3c4;_0_1: Charts.ChartContent&gt;(accumulated: &#x3c4;_0_0, next: &#x3c4;_0_1) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.chartYAxis&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Charts.AxisContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;&lt;&lt;opaque return type of SwiftUI.View.chartYAxis&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Charts.AxisContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ZStack&lt;&lt;&lt;opaque return type of SwiftUI.View.chartXAxis&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Charts.AxisContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;)&gt; in AuthScreen.MainChartView.body.getter : some"
+                  moduleName = "AuthScreen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikitagulaev/Desktop/Pp/Ex/AuthScreen/AuthScreen/Main/Views/MainChartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "97A03D77-F066-4697-89DA-738E1F800C37 - 125b3727efb40fbc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (AuthScreen.GoalsStatistic) -&gt; &lt;&lt;opaque return type of Charts.ChartContent.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of static Charts.ChartContentBuilder.buildPartialBlock&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: Charts.ChartContent, &#x3c4;_0_1: Charts.ChartContent&gt;(accumulated: &#x3c4;_0_0, next: &#x3c4;_0_1) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.chartYAxis&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Charts.AxisContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;&lt;&lt;opaque return type of SwiftUI.View.chartYAxis&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Charts.AxisContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ZStack&lt;&lt;&lt;opaque return type of SwiftUI.View.chartXAxis&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Charts.AxisContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt;)&gt; in AuthScreen.MainChartView.body.getter : some"
+                  moduleName = "AuthScreen"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikitagulaev/Desktop/Pp/Ex/AuthScreen/AuthScreen/Main/Views/MainChartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "560">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

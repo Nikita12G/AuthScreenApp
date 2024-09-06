@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1167EAA2C89E7FF004CF44A /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1167EA92C89E7FF004CF44A /* OpenAPIClient */; };
+		A1167EAF2C89EBD5004CF44A /* FootbalNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1167EAE2C89EBD5004CF44A /* FootbalNetworkServices.swift */; };
+		A1167EDE2C89EF4F004CF44A /* FootballViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1167EDD2C89EF4F004CF44A /* FootballViewModel.swift */; };
+		A1167EE32C8AD412004CF44A /* FootballModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1167EE22C8AD412004CF44A /* FootballModels.swift */; };
+		A1167EE52C8AD451004CF44A /* GoalsStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1167EE42C8AD451004CF44A /* GoalsStatistic.swift */; };
 		A11C79CF2C74AB960092CFEE /* MainContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */; };
 		A12A62F22C898B670084F452 /* AuthInputCodeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F12C898B670084F452 /* AuthInputCodeContentView.swift */; };
 		A12A62F42C898B8D0084F452 /* AuthInputCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A62F32C898B8D0084F452 /* AuthInputCodeTextField.swift */; };
@@ -41,7 +46,6 @@
 		A1DEE6F42C4505200003733B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E62C4505200003733B /* Colors.swift */; };
 		A1DEE6F52C4505200003733B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E82C4505200003733B /* Extensions.swift */; };
 		A1E22C082C592A0D00D3BA9C /* MainLeftSideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E22C072C592A0D00D3BA9C /* MainLeftSideBarView.swift */; };
-		A1E70B222C85E3C9001DF6DD /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1E70B212C85E3C9001DF6DD /* OpenAPIClient */; };
 		A1E70B272C8605EB001DF6DD /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E70B262C8605EB001DF6DD /* NewsViewModel.swift */; };
 		A1E70B2A2C860712001DF6DD /* NewsNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E70B292C860712001DF6DD /* NewsNetworkServices.swift */; };
 		A1EC2AE72C5D02F200014EA4 /* MainCirclesChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC2AE62C5D02F200014EA4 /* MainCirclesChartView.swift */; };
@@ -62,6 +66,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1167EA52C89E63F004CF44A /* generateapis.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateapis.sh; sourceTree = "<group>"; };
+		A1167EA72C89E6D8004CF44A /* NewsAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NewsAPI; path = AuthScreen/NewsAPI; sourceTree = "<group>"; };
+		A1167EAE2C89EBD5004CF44A /* FootbalNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalNetworkServices.swift; sourceTree = "<group>"; };
+		A1167EDD2C89EF4F004CF44A /* FootballViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballViewModel.swift; sourceTree = "<group>"; };
+		A1167EE22C8AD412004CF44A /* FootballModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballModels.swift; sourceTree = "<group>"; };
+		A1167EE42C8AD451004CF44A /* GoalsStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsStatistic.swift; sourceTree = "<group>"; };
 		A11C79CE2C74AB960092CFEE /* MainContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainContactDetailView.swift; path = ../../Main/Views/MainContactDetailView.swift; sourceTree = "<group>"; };
 		A12A62F12C898B670084F452 /* AuthInputCodeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputCodeContentView.swift; sourceTree = "<group>"; };
 		A12A62F32C898B8D0084F452 /* AuthInputCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputCodeTextField.swift; sourceTree = "<group>"; };
@@ -98,7 +108,6 @@
 		A1DEE6E62C4505200003733B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A1DEE6E82C4505200003733B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A1E22C072C592A0D00D3BA9C /* MainLeftSideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainLeftSideBarView.swift; path = ../../Main/Views/MainLeftSideBarView.swift; sourceTree = "<group>"; };
-		A1E70B1F2C85E24B001DF6DD /* NewsAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NewsAPI; path = AuthScreen/NewsAPI; sourceTree = "<group>"; };
 		A1E70B262C8605EB001DF6DD /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		A1E70B292C860712001DF6DD /* NewsNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNetworkServices.swift; sourceTree = "<group>"; };
 		A1EC2AE62C5D02F200014EA4 /* MainCirclesChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainCirclesChartView.swift; path = ../../Main/Views/MainCirclesChartView.swift; sourceTree = "<group>"; };
@@ -125,7 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E70B222C85E3C9001DF6DD /* OpenAPIClient in Frameworks */,
+				A1167EAA2C89E7FF004CF44A /* OpenAPIClient in Frameworks */,
 				F85F707BC3867D3ADC1FB847 /* Pods_AuthScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +149,15 @@
 				F3D22A5418FDF966524C9864 /* Pods-AuthScreen.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1167EE12C8AD3FA004CF44A /* FootballModels */ = {
+			isa = PBXGroup;
+			children = (
+				A1167EE22C8AD412004CF44A /* FootballModels.swift */,
+				A1167EE42C8AD451004CF44A /* GoalsStatistic.swift */,
+			);
+			path = FootballModels;
 			sourceTree = "<group>";
 		};
 		A12A62F02C898B390084F452 /* AuthInputCode */ = {
@@ -191,6 +209,7 @@
 		A163B5892C5BDB35007C44E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1167EE12C8AD3FA004CF44A /* FootballModels */,
 				A163B58A2C5BDB4D007C44E0 /* Trends.swift */,
 				A15788832C63D4C90006CD0E /* Statistic.swift */,
 				A1EC2AEA2C5D125900014EA4 /* MonthStatistic.swift */,
@@ -206,7 +225,8 @@
 		A1DEE69D2C45034B0003733B = {
 			isa = PBXGroup;
 			children = (
-				A1E70B1F2C85E24B001DF6DD /* NewsAPI */,
+				A1167EA72C89E6D8004CF44A /* NewsAPI */,
+				A1167EA52C89E63F004CF44A /* generateapis.sh */,
 				A1DEE6A82C45034B0003733B /* AuthScreen */,
 				A1DEE6A72C45034B0003733B /* Products */,
 				0F854EF055517FCF5AB30C6E /* Pods */,
@@ -316,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E70B262C8605EB001DF6DD /* NewsViewModel.swift */,
+				A1167EDD2C89EF4F004CF44A /* FootballViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -324,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E70B292C860712001DF6DD /* NewsNetworkServices.swift */,
+				A1167EAE2C89EBD5004CF44A /* FootbalNetworkServices.swift */,
 			);
 			name = NetworkServices;
 			path = DataProviders/NetworkServices;
@@ -384,7 +406,7 @@
 			);
 			name = AuthScreen;
 			packageProductDependencies = (
-				A1E70B212C85E3C9001DF6DD /* OpenAPIClient */,
+				A1167EA92C89E7FF004CF44A /* OpenAPIClient */,
 			);
 			productName = AuthScreen;
 			productReference = A1DEE6A62C45034B0003733B /* AuthScreen.app */;
@@ -474,17 +496,20 @@
 				A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */,
 				A19B21AA2C8195A6008BDC9D /* MainRightSideBar.swift in Sources */,
 				A1E70B2A2C860712001DF6DD /* NewsNetworkServices.swift in Sources */,
+				A1167EDE2C89EF4F004CF44A /* FootballViewModel.swift in Sources */,
 				A1E70B272C8605EB001DF6DD /* NewsViewModel.swift in Sources */,
 				A1512E942C5BDA0100860F0C /* MainTrendsView.swift in Sources */,
 				A1DA8E552C7893DA0061521F /* NewsOfDay.swift in Sources */,
 				A15788822C63B4990006CD0E /* RoundedCorners.swift in Sources */,
 				A1F18E692C80A6EA00547CEB /* ExternalTraffic.swift in Sources */,
+				A1167EAF2C89EBD5004CF44A /* FootbalNetworkServices.swift in Sources */,
 				A16966182C62635500E0470B /* Contact.swift in Sources */,
 				A1F911FF2C64D6D900D7CFC7 /* CalendarView.swift in Sources */,
 				A1512E662C5A7C9600860F0C /* MainContentView.swift in Sources */,
 				A1EC2AE92C5D11E000014EA4 /* MainMonthStatisticView.swift in Sources */,
 				A19B21A82C8187C1008BDC9D /* MainSupportView.swift in Sources */,
 				A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */,
+				A1167EE32C8AD412004CF44A /* FootballModels.swift in Sources */,
 				A12A62FC2C8996B40084F452 /* SalesOfYear.swift in Sources */,
 				A1CF7B792C7C7820004F8B34 /* MainChartView.swift in Sources */,
 				A1F18E622C7EF90600547CEB /* MainPointView.swift in Sources */,
@@ -500,6 +525,7 @@
 				A12A62F22C898B670084F452 /* AuthInputCodeContentView.swift in Sources */,
 				A11C79CF2C74AB960092CFEE /* MainContactDetailView.swift in Sources */,
 				A1EC2AE72C5D02F200014EA4 /* MainCirclesChartView.swift in Sources */,
+				A1167EE52C8AD451004CF44A /* GoalsStatistic.swift in Sources */,
 				A1DEE6EC2C4505200003733B /* AuthScreen.swift in Sources */,
 				A1DEE6E92C4505200003733B /* Helpers.swift in Sources */,
 				A1F912032C64D78700D7CFC7 /* CreatingApplicationView.swift in Sources */,
@@ -739,7 +765,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A1E70B212C85E3C9001DF6DD /* OpenAPIClient */ = {
+		A1167EA92C89E7FF004CF44A /* OpenAPIClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = OpenAPIClient;
 		};

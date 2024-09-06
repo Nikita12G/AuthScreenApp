@@ -35,3 +35,6 @@
 "main.newsCount" = "Количество новостей по теме";
 "main.allNews" = "Всего новостей";
 "main.loadNews" = "Новостей загружено";
+
+"main.footballGoalCount" = "Количество голов";
+"main.footballResult" = "Результат";

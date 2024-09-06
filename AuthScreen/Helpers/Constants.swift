@@ -11,7 +11,8 @@ enum Constants {
     static let
     
     newsApiKey =  "228c3952f0524af9a7de30fc3400750f",
-    
+    footballApiKey = "0742e7b700b52b24b496c8f2d88db235",
+
     authorisationTitle = NSLocalizedString("authorisation.title", comment: ""),
     authorisationSubtitle = NSLocalizedString("authorisation.subTitle", comment: ""),
     authorisationRequestTitle = NSLocalizedString("authorisation.requestTitle", comment: ""),
@@ -43,5 +44,7 @@ enum Constants {
     
     newsCount = NSLocalizedString("main.newsCount", comment: ""),
     allNews = NSLocalizedString("main.allNews", comment: ""),
-    loadNews = NSLocalizedString("main.loadNews", comment: "")
+    loadNews = NSLocalizedString("main.loadNews", comment: ""),
+    footballGoalCount = NSLocalizedString("main.footballGoalCount", comment: ""),
+    footballResult = NSLocalizedString("main.footballResult", comment: "")
 }

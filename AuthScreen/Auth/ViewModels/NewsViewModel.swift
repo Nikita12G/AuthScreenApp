@@ -5,18 +5,16 @@
 //  Created by Никита Гуляев on 02.09.2024.
 //
 
-import SwiftUI
-import Combine
+import Foundation
 import OpenAPIClient
 
-@MainActor
 class NewsViewModel: ObservableObject {
     @Published var topicsForNews = [ "iOS 18", "Meta", "Russia", "Marvel", "Paris"]
     @Published var articleList: ArticleList?
     @Published var error: Error?
     @Published var isLoading: Bool = false
     @Published var progressValue: CGFloat?
-    private let newsService = NewsService()
+    private let newsService = NewsNetworkServices()
     
     func fetchArticles(targetTopic: String) {
         isLoading = true
@@ -27,7 +25,7 @@ class NewsViewModel: ObservableObject {
                     self?.error = error
                 } else if let articleList = articleList {
                     self?.articleList = articleList
-                    self?.progressValue = (CGFloat(articleList.articles?.count ?? 1) / CGFloat(articleList.totalResults ?? 1)) * 10
+                    self?.progressValue = (CGFloat(articleList.articles?.count ?? 1) * 10 / CGFloat(articleList.totalResults ?? 1))
                 }
             }
         }

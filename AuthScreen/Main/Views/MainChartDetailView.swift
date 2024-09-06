@@ -10,35 +10,32 @@ import Charts
 
 struct MainChartDetailView: View {
     
-    private var dataLastYear: [SalesOfYear]
-    private var dataCurrentYear: [SalesOfYear]
-    private var articleDifference: Int
-    @Binding private var targetMonth: Int
+    private var scoredGoals: [GoalsStatistic]
+    private var missedGoals: [GoalsStatistic]
+    private var goalsDifference: Int
     
-    init(dataLastYear: [SalesOfYear], dataCurrentYear: [SalesOfYear], articleDifference: Int, targetMonth: Binding<Int>) {
-        self.dataLastYear = dataLastYear
-        self.dataCurrentYear = dataCurrentYear
-        self.articleDifference = articleDifference
-        self._targetMonth = targetMonth
+    init(scoredGoals: [GoalsStatistic], missedGoals: [GoalsStatistic], goalsDifference: Int) {
+        self.scoredGoals = scoredGoals
+        self.missedGoals = missedGoals
+        self.goalsDifference = goalsDifference
     }
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(Constants.newsCount)
+            Text(Constants.footballGoalCount)
                 .font(Fonts.montserrat(ofSize: 18))
                 .fontWeight(.bold)
                 .foregroundStyle(Colors.White)
             HStack {
-                Text("\(articleDifference)")
-                    .font(Fonts.montserrat(ofSize: 14))
-                    .foregroundStyle(articleDifference > 0 ? Colors.Green : Colors.Red)
-                Text(Constants.sailsRelative)
+                Text(Constants.footballResult)
                     .font(Fonts.montserrat(ofSize: 14))
                     .foregroundStyle(Colors.Grey)
-                    .padding(-5)
+                Text("\(goalsDifference > 0 ? "+" : "-")\(goalsDifference)")
+                    .font(Fonts.montserrat(ofSize: 14))
+                    .foregroundStyle(goalsDifference > 0 ? Colors.Green : Colors.Red)
             }
             .padding(EdgeInsets(top: 6, leading: 0, bottom: 24, trailing: 0))
-            MainChartView(dataLastYear: dataLastYear, dataCurrentYear: dataCurrentYear, targetMonth: _targetMonth)
+            MainChartView(scoredGoals: scoredGoals, missedGoals: missedGoals)
         }
         .padding(24)
         .background(AuthGradientView())

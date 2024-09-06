@@ -35,3 +35,6 @@
 "main.newsCount" = "News count of topic";
 "main.allNews" = "All news";
 "main.loadNews" = "Load news";
+
+"main.footballGoalCount" = "Goals count";
+"main.footballResult" = "Result";

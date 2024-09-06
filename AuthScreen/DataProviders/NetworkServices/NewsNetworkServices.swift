@@ -7,13 +7,8 @@
 import Foundation
 import OpenAPIClient
 
-class NewsService {
+class NewsNetworkServices {
     func loadNews(page: Int, topic: String, year: String, completion: @escaping (ArticleList?, Error?) -> Void) {
-        print("Fetching news with parameters:")
-        print("Topic: \(topic)")
-        print("Year: \(year)")
-        print("Page: \(page)")
-
         ArticlesAPI.everythingGet(
             q: topic,
             from: year,
