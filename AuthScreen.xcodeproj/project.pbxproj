@@ -54,6 +54,8 @@
 		A1F18E622C7EF90600547CEB /* MainPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E612C7EF90600547CEB /* MainPointView.swift */; };
 		A1F18E672C80605C00547CEB /* MainExternalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E662C80605C00547CEB /* MainExternalView.swift */; };
 		A1F18E692C80A6EA00547CEB /* ExternalTraffic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */; };
+		A1F6AFBF2C8AFC4E00DBDB60 /* WSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6AFBE2C8AFC4E00DBDB60 /* WSManager.swift */; };
+		A1F6AFC22C8AFF4000DBDB60 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = A1F6AFC12C8AFF4000DBDB60 /* Starscream */; };
 		A1F911F72C64D4D100D7CFC7 /* UserContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911F62C64D4D100D7CFC7 /* UserContentView.swift */; };
 		A1F911F92C64D56600D7CFC7 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911F82C64D56600D7CFC7 /* ChatContentView.swift */; };
 		A1F911FD2C64D69100D7CFC7 /* HotOffersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911FC2C64D69100D7CFC7 /* HotOffersView.swift */; };
@@ -116,6 +118,7 @@
 		A1F18E612C7EF90600547CEB /* MainPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainPointView.swift; path = ../../Main/Views/MainPointView.swift; sourceTree = "<group>"; };
 		A1F18E662C80605C00547CEB /* MainExternalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainExternalView.swift; path = ../../Main/Views/MainExternalView.swift; sourceTree = "<group>"; };
 		A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExternalTraffic.swift; path = ../../Main/Models/ExternalTraffic.swift; sourceTree = "<group>"; };
+		A1F6AFBE2C8AFC4E00DBDB60 /* WSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSManager.swift; sourceTree = "<group>"; };
 		A1F911F62C64D4D100D7CFC7 /* UserContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentView.swift; sourceTree = "<group>"; };
 		A1F911F82C64D56600D7CFC7 /* ChatContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
 		A1F911FC2C64D69100D7CFC7 /* HotOffersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotOffersView.swift; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 			files = (
 				A1167EAA2C89E7FF004CF44A /* OpenAPIClient in Frameworks */,
 				F85F707BC3867D3ADC1FB847 /* Pods_AuthScreen.framework in Frameworks */,
+				A1F6AFC22C8AFF4000DBDB60 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +249,7 @@
 		A1DEE6A82C45034B0003733B /* AuthScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A1F6AFBD2C8AFC4000DBDB60 /* WSManager */,
 				A1E70B282C8606EB001DF6DD /* NetworkServices */,
 				A1F912062C65066400D7CFC7 /* DataProviders */,
 				A1DEE6DB2C4505200003733B /* Auth */,
@@ -358,6 +363,14 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
+		A1F6AFBD2C8AFC4000DBDB60 /* WSManager */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6AFBE2C8AFC4E00DBDB60 /* WSManager.swift */,
+			);
+			path = WSManager;
+			sourceTree = "<group>";
+		};
 		A1F911F32C64D49700D7CFC7 /* TestViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +420,7 @@
 			name = AuthScreen;
 			packageProductDependencies = (
 				A1167EA92C89E7FF004CF44A /* OpenAPIClient */,
+				A1F6AFC12C8AFF4000DBDB60 /* Starscream */,
 			);
 			productName = AuthScreen;
 			productReference = A1DEE6A62C45034B0003733B /* AuthScreen.app */;
@@ -437,6 +451,9 @@
 				ru,
 			);
 			mainGroup = A1DEE69D2C45034B0003733B;
+			packageReferences = (
+				A1F6AFC02C8AFF4000DBDB60 /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = A1DEE6A72C45034B0003733B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -492,6 +509,7 @@
 				A1F912082C65067400D7CFC7 /* MonthStatisticProvider.swift in Sources */,
 				A1DEE6F02C4505200003733B /* AuthRouter.swift in Sources */,
 				A1F911FD2C64D69100D7CFC7 /* HotOffersView.swift in Sources */,
+				A1F6AFBF2C8AFC4E00DBDB60 /* WSManager.swift in Sources */,
 				A1DEE6F42C4505200003733B /* Colors.swift in Sources */,
 				A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */,
 				A19B21AA2C8195A6008BDC9D /* MainRightSideBar.swift in Sources */,
@@ -764,10 +782,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A1F6AFC02C8AFF4000DBDB60 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		A1167EA92C89E7FF004CF44A /* OpenAPIClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = OpenAPIClient;
+		};
+		A1F6AFC12C8AFF4000DBDB60 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1F6AFC02C8AFF4000DBDB60 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
