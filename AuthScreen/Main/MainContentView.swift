@@ -12,6 +12,7 @@ struct MainContentView: View {
     @State private var statistic = Statistic()
     @State private var targetMonth = Date().month
     @State private var showWidgets = true
+    @State private var showChat = false
     @State private var targetTopic = "iOS 18"
     @StateObject private var newsViewModel = NewsViewModel()
     @StateObject private var footballViewModel = FootballViewModel()
@@ -62,6 +63,13 @@ struct MainContentView: View {
                             }
                             .hidden(!showWidgets)
                             MainSupportView().hidden(!showWidgets)
+                                .scaleEffect(showChat ? 1.1 : 1.0)
+                                .opacity(showChat ? 0.2 : 1)
+                                .onTapGesture {
+                                    withAnimation {
+                                        showChat.toggle()
+                                    }
+                                }
                         }
                     }
                 }
@@ -74,6 +82,10 @@ struct MainContentView: View {
         .onAppear {
             newsViewModel.fetchArticles(targetTopic: targetTopic)
             footballViewModel.fetchTeamStatistics(season: 2020, teamId: 33, leagueId: 39)
+        }
+        .sheet(isPresented: $showChat) {
+            ChatContentView()
+                .presentationBackground(Colors.DarkPurple.opacity(0.2))
         }
     }
 }

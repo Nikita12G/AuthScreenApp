@@ -46,5 +46,10 @@ enum Constants {
     allNews = NSLocalizedString("main.allNews", comment: ""),
     loadNews = NSLocalizedString("main.loadNews", comment: ""),
     footballGoalCount = NSLocalizedString("main.footballGoalCount", comment: ""),
-    footballResult = NSLocalizedString("main.footballResult", comment: "")
+    footballResult = NSLocalizedString("main.footballResult", comment: ""),
+    
+    supportChatTitle = NSLocalizedString("main.supportChatTitle", comment: ""),
+    supportChatOnline = NSLocalizedString("main.supportChatOnline", comment: ""),
+    supportChatOffline = NSLocalizedString("main.supportChatOffline", comment: ""),
+    supportChatEnterMassage = NSLocalizedString("main.supportChatEnterMassage", comment: "")
 }

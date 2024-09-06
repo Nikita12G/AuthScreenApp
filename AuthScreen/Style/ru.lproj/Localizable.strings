@@ -38,3 +38,8 @@
 
 "main.footballGoalCount" = "Количество голов";
 "main.footballResult" = "Результат";
+
+"main.supportChatTitle" = "Чат поддержки";
+"main.supportChatOnline" = "Онлайн";
+"main.supportChatOffline" = "Оффлайн";
+"main.supportChatEnterMassage" = "Введите сообщение";

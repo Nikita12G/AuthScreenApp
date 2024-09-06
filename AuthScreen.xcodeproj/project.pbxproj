@@ -54,10 +54,12 @@
 		A1F18E622C7EF90600547CEB /* MainPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E612C7EF90600547CEB /* MainPointView.swift */; };
 		A1F18E672C80605C00547CEB /* MainExternalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E662C80605C00547CEB /* MainExternalView.swift */; };
 		A1F18E692C80A6EA00547CEB /* ExternalTraffic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */; };
-		A1F6AFBF2C8AFC4E00DBDB60 /* WSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6AFBE2C8AFC4E00DBDB60 /* WSManager.swift */; };
+		A1F6AFBF2C8AFC4E00DBDB60 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6AFBE2C8AFC4E00DBDB60 /* WebSocketManager.swift */; };
 		A1F6AFC22C8AFF4000DBDB60 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = A1F6AFC12C8AFF4000DBDB60 /* Starscream */; };
+		A1F6AFC52C8B10BA00DBDB60 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6AFC42C8B10BA00DBDB60 /* ChatContentView.swift */; };
+		A1F6AFCA2C8B46CB00DBDB60 /* ChatMassageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F6AFC92C8B46CB00DBDB60 /* ChatMassageModel.swift */; };
 		A1F911F72C64D4D100D7CFC7 /* UserContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911F62C64D4D100D7CFC7 /* UserContentView.swift */; };
-		A1F911F92C64D56600D7CFC7 /* ChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911F82C64D56600D7CFC7 /* ChatContentView.swift */; };
+		A1F911F92C64D56600D7CFC7 /* TestChatContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911F82C64D56600D7CFC7 /* TestChatContentView.swift */; };
 		A1F911FD2C64D69100D7CFC7 /* HotOffersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911FC2C64D69100D7CFC7 /* HotOffersView.swift */; };
 		A1F911FF2C64D6D900D7CFC7 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F911FE2C64D6D900D7CFC7 /* CalendarView.swift */; };
 		A1F912012C64D71300D7CFC7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F912002C64D71300D7CFC7 /* SettingsView.swift */; };
@@ -118,9 +120,11 @@
 		A1F18E612C7EF90600547CEB /* MainPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainPointView.swift; path = ../../Main/Views/MainPointView.swift; sourceTree = "<group>"; };
 		A1F18E662C80605C00547CEB /* MainExternalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainExternalView.swift; path = ../../Main/Views/MainExternalView.swift; sourceTree = "<group>"; };
 		A1F18E682C80A6EA00547CEB /* ExternalTraffic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExternalTraffic.swift; path = ../../Main/Models/ExternalTraffic.swift; sourceTree = "<group>"; };
-		A1F6AFBE2C8AFC4E00DBDB60 /* WSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSManager.swift; sourceTree = "<group>"; };
+		A1F6AFBE2C8AFC4E00DBDB60 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		A1F6AFC42C8B10BA00DBDB60 /* ChatContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
+		A1F6AFC92C8B46CB00DBDB60 /* ChatMassageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMassageModel.swift; sourceTree = "<group>"; };
 		A1F911F62C64D4D100D7CFC7 /* UserContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContentView.swift; sourceTree = "<group>"; };
-		A1F911F82C64D56600D7CFC7 /* ChatContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatContentView.swift; sourceTree = "<group>"; };
+		A1F911F82C64D56600D7CFC7 /* TestChatContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChatContentView.swift; sourceTree = "<group>"; };
 		A1F911FC2C64D69100D7CFC7 /* HotOffersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotOffersView.swift; sourceTree = "<group>"; };
 		A1F911FE2C64D6D900D7CFC7 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A1F912002C64D71300D7CFC7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -249,11 +253,11 @@
 		A1DEE6A82C45034B0003733B /* AuthScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A1F6AFBD2C8AFC4000DBDB60 /* WSManager */,
 				A1E70B282C8606EB001DF6DD /* NetworkServices */,
 				A1F912062C65066400D7CFC7 /* DataProviders */,
 				A1DEE6DB2C4505200003733B /* Auth */,
 				A1E22C062C5929EA00D3BA9C /* Main */,
+				A1F6AFC32C8B109B00DBDB60 /* Chat */,
 				A1F18E632C7F1FD500547CEB /* ViewModifiers */,
 				A1F911F32C64D49700D7CFC7 /* TestViews */,
 				A1DEE6E72C4505200003733B /* Exstentions */,
@@ -349,6 +353,7 @@
 		A1E70B282C8606EB001DF6DD /* NetworkServices */ = {
 			isa = PBXGroup;
 			children = (
+				A1F6AFBD2C8AFC4000DBDB60 /* WebSocketManager */,
 				A1E70B292C860712001DF6DD /* NewsNetworkServices.swift */,
 				A1167EAE2C89EBD5004CF44A /* FootbalNetworkServices.swift */,
 			);
@@ -363,19 +368,36 @@
 			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
-		A1F6AFBD2C8AFC4000DBDB60 /* WSManager */ = {
+		A1F6AFBD2C8AFC4000DBDB60 /* WebSocketManager */ = {
 			isa = PBXGroup;
 			children = (
-				A1F6AFBE2C8AFC4E00DBDB60 /* WSManager.swift */,
+				A1F6AFBE2C8AFC4E00DBDB60 /* WebSocketManager.swift */,
 			);
-			path = WSManager;
+			path = WebSocketManager;
+			sourceTree = "<group>";
+		};
+		A1F6AFC32C8B109B00DBDB60 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6AFCB2C8B4F5800DBDB60 /* Models */,
+				A1F6AFC42C8B10BA00DBDB60 /* ChatContentView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A1F6AFCB2C8B4F5800DBDB60 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6AFC92C8B46CB00DBDB60 /* ChatMassageModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A1F911F32C64D49700D7CFC7 /* TestViews */ = {
 			isa = PBXGroup;
 			children = (
 				A1F911F62C64D4D100D7CFC7 /* UserContentView.swift */,
-				A1F911F82C64D56600D7CFC7 /* ChatContentView.swift */,
+				A1F911F82C64D56600D7CFC7 /* TestChatContentView.swift */,
 				A1F911FC2C64D69100D7CFC7 /* HotOffersView.swift */,
 				A1F911FE2C64D6D900D7CFC7 /* CalendarView.swift */,
 				A1F912002C64D71300D7CFC7 /* SettingsView.swift */,
@@ -508,14 +530,16 @@
 			files = (
 				A1F912082C65067400D7CFC7 /* MonthStatisticProvider.swift in Sources */,
 				A1DEE6F02C4505200003733B /* AuthRouter.swift in Sources */,
+				A1F6AFC52C8B10BA00DBDB60 /* ChatContentView.swift in Sources */,
 				A1F911FD2C64D69100D7CFC7 /* HotOffersView.swift in Sources */,
-				A1F6AFBF2C8AFC4E00DBDB60 /* WSManager.swift in Sources */,
+				A1F6AFBF2C8AFC4E00DBDB60 /* WebSocketManager.swift in Sources */,
 				A1DEE6F42C4505200003733B /* Colors.swift in Sources */,
 				A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */,
 				A19B21AA2C8195A6008BDC9D /* MainRightSideBar.swift in Sources */,
 				A1E70B2A2C860712001DF6DD /* NewsNetworkServices.swift in Sources */,
 				A1167EDE2C89EF4F004CF44A /* FootballViewModel.swift in Sources */,
 				A1E70B272C8605EB001DF6DD /* NewsViewModel.swift in Sources */,
+				A1F6AFCA2C8B46CB00DBDB60 /* ChatMassageModel.swift in Sources */,
 				A1512E942C5BDA0100860F0C /* MainTrendsView.swift in Sources */,
 				A1DA8E552C7893DA0061521F /* NewsOfDay.swift in Sources */,
 				A15788822C63B4990006CD0E /* RoundedCorners.swift in Sources */,
@@ -550,7 +574,7 @@
 				A1DEE6F32C4505200003733B /* Fonts.swift in Sources */,
 				A1EC2AEB2C5D125900014EA4 /* MonthStatistic.swift in Sources */,
 				A12A62F72C898BAE0084F452 /* InputState.swift in Sources */,
-				A1F911F92C64D56600D7CFC7 /* ChatContentView.swift in Sources */,
+				A1F911F92C64D56600D7CFC7 /* TestChatContentView.swift in Sources */,
 				A1DEE6F52C4505200003733B /* Extensions.swift in Sources */,
 				A1F911F72C64D4D100D7CFC7 /* UserContentView.swift in Sources */,
 				A12A62FA2C898BFE0084F452 /* ConfirmCodeTimer.swift in Sources */,

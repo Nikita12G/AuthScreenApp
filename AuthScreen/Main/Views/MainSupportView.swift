@@ -20,13 +20,9 @@ struct MainSupportView: View {
                     RoundedRectangle(cornerRadius: 12)
                         .frame(width: 120, height: 36)
                         .foregroundStyle(LinearGradient(colors: [Colors.SupportBlackFirstGradientColor, Colors.SupportBlackSecondGradientColor], startPoint: .topLeading, endPoint: .bottomTrailing))
-                    Button(action: {
-                        print(Constants.needHelp)
-                    }, label: {
-                        Text(Constants.needHelp)
-                            .font(Fonts.montserrat(ofSize: 12))
-                            .foregroundStyle(Colors.White)
-                    })
+                    Text(Constants.needHelp)
+                        .font(Fonts.montserrat(ofSize: 12))
+                        .foregroundStyle(Colors.White)
                 }
             }
         }

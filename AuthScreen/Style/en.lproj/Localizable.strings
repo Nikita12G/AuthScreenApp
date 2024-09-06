@@ -38,3 +38,8 @@
 
 "main.footballGoalCount" = "Goals count";
 "main.footballResult" = "Result";
+
+"main.supportChatTitle" = "Support chat";
+"main.supportChatOnline" = "Online";
+"main.supportChatOffline" = "Offline";
+"main.supportChatEnterMassage" = "Enter massage";
