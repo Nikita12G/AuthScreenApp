@@ -22,7 +22,7 @@ struct MainMonthStatisticView: View {
         let leftColumn = monthStatistic.indices.filter { $0 % 2 == 0 }.map { monthStatistic[$0] }
         let rightColumn = monthStatistic.indices.filter { $0 % 2 != 0 }.map { monthStatistic[$0] }
 
-        Text("Статистика за \(monthSelected.description) месяц")
+        Text("\(Constants.statisticTitleOfMonth) \(monthSelected.description) \(Constants.statisticMonth)")
             .font(Fonts.montserrat(ofSize: 16))
             .foregroundStyle(Colors.White)
             .padding(EdgeInsets(top: 20, leading: 20, bottom: 12, trailing: 20))

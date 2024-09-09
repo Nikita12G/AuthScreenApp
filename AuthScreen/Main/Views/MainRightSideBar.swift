@@ -18,7 +18,7 @@ struct MainRightSideBar: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .center) {
             MainTrendsView(trends: statistic.getTrend(for: monthSelected))
                 .padding(EdgeInsets(top: 36, leading: 20, bottom: 20, trailing: 20))
             MainMonthStatisticView(statistic: _statistic, monthSelected: $monthSelected)

@@ -12,6 +12,8 @@ enum Constants {
     
     newsApiKey =  "228c3952f0524af9a7de30fc3400750f",
     footballApiKey = "0742e7b700b52b24b496c8f2d88db235",
+    
+    fontsMontserrat = NSLocalizedString("fonts.montserrat", comment: ""),
 
     authorisationTitle = NSLocalizedString("authorisation.title", comment: ""),
     authorisationSubtitle = NSLocalizedString("authorisation.subtitle", comment: ""),
@@ -23,8 +25,13 @@ enum Constants {
     incorrectCode = NSLocalizedString("authorisation.incorrectCode", comment: ""),
     requestCodeAgain = NSLocalizedString("authorisation.requestCodeAgain", comment: ""),
     secondShort = NSLocalizedString("authorisation.secondShort", comment: ""),
+    goToBack = NSLocalizedString("authorisation.goToBack", comment: ""),
+    price = NSLocalizedString("main.price", comment: ""),
+    buy = NSLocalizedString("main.buy", comment: ""),
+    usersClick = NSLocalizedString("main.click", comment: ""),
+    statisticTitleOfMonth = NSLocalizedString("main.statisticTitle", comment: ""),
+    statisticMonth = NSLocalizedString("main.statisticMonth", comment: ""),
 
-    fontsMontserrat = NSLocalizedString("fonts.montserrat", comment: ""),
     
     mainMovingTendTitle = NSLocalizedString("main.movingTrendTitle", comment: ""),
     monthTitle = NSLocalizedString("main.month", comment: ""),
@@ -44,7 +51,7 @@ enum Constants {
     needHelp = NSLocalizedString("main.needHelp", comment: ""),
     statisticTitle = NSLocalizedString("main.statisticTitle", comment: ""),
     showWidgets = NSLocalizedString("main.showWidgets", comment: ""),
-    shareTitle = NSLocalizedString("main.shareTitile", comment: ""),
+    shareTitle = NSLocalizedString("main.shareTitle", comment: ""),
     
     newsCount = NSLocalizedString("main.newsCount", comment: ""),
     allNews = NSLocalizedString("main.allNews", comment: ""),

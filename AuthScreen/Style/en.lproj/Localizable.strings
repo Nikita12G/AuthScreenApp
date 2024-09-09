@@ -17,6 +17,7 @@
 "authorisation.incorrectCode" = "Incorrect code";
 "authorisation.requestCodeAgain" = "Request Code Again";
 "authorisation.secondShort" = "sec";
+"authorisation.goToBack" = "Go to back";
 
 "main.movingTrendTitle" = "Moving Trend in 2024";
 "main.contactsTitle" = "Contact numbers";
@@ -34,7 +35,12 @@
 "main.needHelp" = "Need help";
 "main.statisticTitle" = "Statistic";
 "main.showWidgets" = "Show widgets";
-"main.shareTitile" = "Share";
+"main.shareTitle" = "Share";
+"main.statisticTitleOfMonth" = "The statistic of";
+"main.statisticMonth" = "month";
+"main.price" = "Price";
+"main.buy" = "Bay";
+"main.usersClick" = "Click";
 
 "main.newsCount" = "News count of topic";
 "main.allNews" = "All news";

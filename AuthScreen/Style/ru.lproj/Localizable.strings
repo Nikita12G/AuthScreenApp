@@ -17,6 +17,7 @@
 "authorisation.incorrectCode" = "Неверный пароль";
 "authorisation.requestCodeAgain" = "Запросить повторно через";
 "authorisation.secondShort" = "сек";
+"authorisation.goToBack" = "Вернуться назад";
 
 "main.movingTrendTitle" = "Движение тренда в 2024";
 "main.contactsTitle" = "Данные для связи";
@@ -34,7 +35,12 @@
 "main.needHelp" = "Нужна помощь";
 "main.statisticTitle" = "Статистика";
 "main.showWidgets" = "Отображение виджетов";
-"main.shareTitile" = "Поделиться";
+"main.shareTitle" = "Поделиться";
+"main.statisticTitleOfMonth" = "Статистика за";
+"main.statisticMonth" = "месяц";
+"main.price" = "Цена";
+"main.buy" = "Покупки";
+"main.usersClick" = "Клик";
 
 "main.newsCount" = "Количество новостей по теме";
 "main.allNews" = "Всего новостей";

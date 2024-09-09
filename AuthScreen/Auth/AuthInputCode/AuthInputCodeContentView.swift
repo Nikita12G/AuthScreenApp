@@ -90,7 +90,7 @@ struct AuthInputCodeContentView: View {
                 HStack(spacing: 4) {
                     Image(systemName: "chevron.left").foregroundColor(Colors.White)
                     
-                    Text("Вернуться назад")
+                    Text(Constants.goToBack)
                         .font(Fonts.montserrat(ofSize: 14))
                         .foregroundColor(Colors.White)
                 }
