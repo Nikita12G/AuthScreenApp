@@ -7,27 +7,39 @@
 
 import Foundation
 import OpenAPIClient
+import Combine
 
 class NewsViewModel: ObservableObject {
     @Published var topicsForNews = [ "iOS 18", "Meta", "Russia", "Marvel", "Paris"]
     @Published var articleList: ArticleList?
-    @Published var errorMassage: String?
+    @Published var errorMessage: String?
     @Published var isLoading: Bool = false
     @Published var progressValue: CGFloat?
+    
     private let newsService = NewsNetworkServices()
+    private var cancellables = Set<AnyCancellable>()
     
     func fetchArticles(targetTopic: String) {
         isLoading = true
-        newsService.loadNews(page: 1, topic: targetTopic, year: "2024") { [weak self] articleList, error in
-            DispatchQueue.main.async {
+        errorMessage = nil
+        progressValue = nil
+        
+        newsService.loadNewsPublisher(page: 1, topic: targetTopic, year: "2024")
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
                 self?.isLoading = false
-                if let error = error {
-                    self?.errorMassage = error.localizedDescription
-                } else if let articleList = articleList {
-                    self?.articleList = articleList
-                    self?.progressValue = (CGFloat(articleList.articles?.count ?? 1) * 10 / CGFloat(articleList.totalResults ?? 1))
+                switch completion {
+                case .failure(let error):
+                    self?.errorMessage = error.localizedDescription
+                case .finished:
+                    break
                 }
-            }
-        }
+            }, receiveValue: { [weak self] articleList in
+                self?.articleList = articleList
+                let articleCount = CGFloat(articleList.articles?.count ?? 0)
+                let totalResults = CGFloat(articleList.totalResults ?? 1)
+                self?.progressValue = articleCount / totalResults
+            })
+            .store(in: &cancellables)
     }
 }

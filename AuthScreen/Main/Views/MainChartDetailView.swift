@@ -14,14 +14,14 @@ struct MainChartDetailView: View {
     private var missedGoals: [GoalsStatistic]
     private var goalsDifference: Int
     private var isLoading: Bool
-    private var errorMessage: String?
+    @Binding private var errorMessage: String?
     
-    init(scoredGoals: [GoalsStatistic], missedGoals: [GoalsStatistic], goalsDifference: Int, isLoading: Bool, errorMessage: String?) {
+    init(scoredGoals: [GoalsStatistic], missedGoals: [GoalsStatistic], goalsDifference: Int, isLoading: Bool, errorMessage: Binding<String?>) {
         self.scoredGoals = scoredGoals
         self.missedGoals = missedGoals
         self.goalsDifference = goalsDifference
         self.isLoading = isLoading
-        self.errorMessage = errorMessage
+        self._errorMessage = errorMessage
     }
     
     var body: some View {

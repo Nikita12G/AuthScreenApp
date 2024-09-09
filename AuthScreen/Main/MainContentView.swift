@@ -47,7 +47,7 @@ struct MainContentView: View {
                                 .foregroundStyle(Colors.White)
                         })
                     }.padding(EdgeInsets(top: 30, leading: 20, bottom: 24, trailing: 24))
-                    MainChartDetailView(scoredGoals: footballViewModel.getScoredGoalsForMinutes(), missedGoals: footballViewModel.getMissedGoalsForMinutes(), goalsDifference: footballViewModel.getTotalGoalDifference(), isLoading: newsViewModel.isLoading, errorMessage: newsViewModel.errorMassage)
+                    MainChartDetailView(scoredGoals: footballViewModel.getScoredGoalsForMinutes(), missedGoals: footballViewModel.getMissedGoalsForMinutes(), goalsDifference: footballViewModel.getTotalGoalDifference(), isLoading: newsViewModel.isLoading, errorMessage: $newsViewModel.errorMessage)
                     HStack {
                         MainContactsListView(isDetailList: true).hidden(!showWidgets)
                         VStack {
@@ -56,10 +56,9 @@ struct MainContentView: View {
                                 topicsForNews: newsViewModel.topicsForNews,
                                 allArticleCount: newsViewModel.articleList?.totalResults,
                                 topicsArticleCount: newsViewModel.articleList?.articles?.count,
-                                progressValue: newsViewModel.progressValue, isLoading: newsViewModel.isLoading, errorMessage: newsViewModel.errorMassage)
-                            .onChange(of: targetTopic) { _, newTopic in
-                                targetTopic = newTopic
-                                newsViewModel.fetchArticles(targetTopic: newTopic)
+                                progressValue: newsViewModel.progressValue, isLoading: newsViewModel.isLoading, errorMessage: $newsViewModel.errorMessage)
+                            .task(id: targetTopic) {
+                                newsViewModel.fetchArticles(targetTopic: targetTopic)
                             }
                             .hidden(!showWidgets)
                             MainSupportView().hidden(!showWidgets)
@@ -79,7 +78,7 @@ struct MainContentView: View {
             }
         }
         .background(Colors.DarkPurple)
-        .onAppear {
+        .task {
             newsViewModel.fetchArticles(targetTopic: targetTopic)
             footballViewModel.fetchTeamStatistics(season: 2020, teamId: 33, leagueId: 39)
         }

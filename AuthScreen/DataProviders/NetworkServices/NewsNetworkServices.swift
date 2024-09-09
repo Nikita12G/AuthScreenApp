@@ -6,27 +6,30 @@
 //
 import Foundation
 import OpenAPIClient
+import Combine
 
 class NewsNetworkServices {
-    func loadNews(page: Int, topic: String, year: String, completion: @escaping (ArticleList?, Error?) -> Void) {
-        ArticlesAPI.everythingGet(
-            q: topic,
-            from: year,
-            sortBy: "publishedAt",
-            language: "en",
-            apiKey: Constants.newsApiKey,
-            page: page
-        ) { data, error in
-            if let error = error {
-                print("Error fetching news: \(error)")
-                completion(nil, error)
-            } else {
-                if let articles = data?.articles {
-                    print("Successfully fetched \(articles.count) articles.")
+    func loadNewsPublisher(page: Int, topic: String, year: String) -> Future<ArticleList, Error> {
+        return Future { promise in
+            ArticlesAPI.everythingGet(
+                q: topic,
+                from: year,
+                sortBy: "publishedAt",
+                language: "en",
+                apiKey: Constants.newsApiKey,
+                page: page
+            ) { data, error in
+                if let error = error {
+                    print("Error fetching news: \(error)")
+                    promise(.failure(error))
                 } else {
-                    print("No articles found.")
+                    if let articles = data {
+                        promise(.success(articles))
+                        print("Successfully fetched \(String(describing: articles.articles?.count)) articles.")
+                    } else {
+                        print("No articles found.")
+                    }
                 }
-                completion(data, nil)
             }
         }
     }

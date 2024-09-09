@@ -9,21 +9,21 @@ import SwiftUI
 
 struct MainExternalView: View {
     @Binding private var topic: String
+    @Binding private var errorMessage: String?
     private var topicsForNews: [String]
     private var allArticleCount: Int?
     private var topicsArticleCount: Int?
     private var progressValue: CGFloat?
     private var isLoading: Bool
-    private var errorMessage: String?
     
-    init(topic: Binding<String>, topicsForNews: [String], allArticleCount: Int?, topicsArticleCount: Int?, progressValue: CGFloat?, isLoading: Bool, errorMessage: String?) {
+    init(topic: Binding<String>, topicsForNews: [String], allArticleCount: Int?, topicsArticleCount: Int?, progressValue: CGFloat?, isLoading: Bool, errorMessage: Binding<String?>) {
         self._topic = topic
         self.topicsForNews = topicsForNews
         self.allArticleCount = allArticleCount
         self.topicsArticleCount = topicsArticleCount
         self.progressValue = progressValue
         self.isLoading = isLoading
-        self.errorMessage = errorMessage
+        self._errorMessage = errorMessage
     }
     
     var body: some View {

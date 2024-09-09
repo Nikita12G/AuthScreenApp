@@ -7,31 +7,38 @@
 
 import Foundation
 
+import Combine
+import SwiftUI
+
 class FootballViewModel: ObservableObject {
     @Published var teamStatistics: TeamStatistics?
     @Published var isLoading = false
     @Published var errorMessage: String?
+    
     private let timeRanges = ["0-15", "16-30", "31-45", "46-60", "61-75", "76-90", "91-105"]
-
     private var networkService = FootballNetworkServices()
+    private var cancellables = Set<AnyCancellable>()
     
     func fetchTeamStatistics(season: Int, teamId: Int, leagueId: Int) {
         self.isLoading = true
         self.errorMessage = nil
         
-        networkService.fetchTeamStatistics(season: season, teamId: teamId, leagueId: leagueId) { [weak self] result in
-            DispatchQueue.main.async {
+        networkService.fetchTeamStatisticsPublisher(season: season, teamId: teamId, leagueId: leagueId)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
                 guard let self = self else { return }
                 self.isLoading = false
                 
-                switch result {
-                case .success(let statistics):
-                    self.teamStatistics = statistics
+                switch completion {
                 case .failure(let error):
                     self.errorMessage = error.localizedDescription
+                case .finished:
+                    break
                 }
-            }
-        }
+            }, receiveValue: { [weak self] statistics in
+                self?.teamStatistics = statistics
+            })
+            .store(in: &cancellables)
     }
     
     func getScoredGoalsForMinutes() -> [GoalsStatistic] {

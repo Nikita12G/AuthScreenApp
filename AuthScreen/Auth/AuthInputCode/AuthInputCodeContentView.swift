@@ -35,7 +35,7 @@ struct AuthInputCodeContentView: View {
                 AuthInputCodeTextField(code: $inputCode, inputState: $inputState)
                     .padding(EdgeInsets(top: 24, leading: 24, bottom: 12, trailing: 24))
                     .focused($textFieldIsFocused)
-                    .onChange(of: inputCode) { _ in
+                    .onChange(of: inputCode) { _, _ in
                         inputState = .regular
                     }
                     .onAppear {
@@ -95,6 +95,10 @@ struct AuthInputCodeContentView: View {
                 .padding(.top, 32)
             }.navigationBarBackButtonHidden(true)
         }
+    }
+    
+    private func codeIsValid(code: String) -> Bool {
+        return code.count >= 4 && code.allSatisfy { $0.isNumber }
     }
 }
 

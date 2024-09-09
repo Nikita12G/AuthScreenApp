@@ -60,6 +60,30 @@ struct AuthInputPhoneContentView: View {
         .padding(10)
         .frame(width: 400, height: 429)
     }
+    
+    private func phoneIsValid(phone: String) -> Bool {
+        let phoneNumber = phone.filter { $0.isNumber }
+        
+        if phoneNumber.count < 11 {
+            return false
+        }
+        
+        let regex = "^((8|\\+7)[\\- ]?)?(\\(?\\d{3}\\)?[\\- ]?)?[\\d\\- ]{7,10}$"
+        
+        do {
+            let regex = try NSRegularExpression(pattern: regex)
+            let range = NSRange(location: 0, length: phone.count)
+            
+            if regex.firstMatch(in: phone, options: [], range: range) != nil {
+                return true
+            } else {
+                return false
+            }
+        } catch {
+            print("Invalid regex: \(error.localizedDescription)")
+            return false
+        }
+    }
 }
 
 #Preview {
