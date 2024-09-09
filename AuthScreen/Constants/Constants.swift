@@ -14,12 +14,16 @@ enum Constants {
     footballApiKey = "0742e7b700b52b24b496c8f2d88db235",
 
     authorisationTitle = NSLocalizedString("authorisation.title", comment: ""),
-    authorisationSubtitle = NSLocalizedString("authorisation.subTitle", comment: ""),
+    authorisationSubtitle = NSLocalizedString("authorisation.subtitle", comment: ""),
+    authorize = NSLocalizedString("authorisation.authorize", comment: ""),
     authorisationRequestTitle = NSLocalizedString("authorisation.requestTitle", comment: ""),
     authorisationPhoneMask = NSLocalizedString("authorisation.phoneMask", comment: ""),
     authorisationErrorStateTitle = NSLocalizedString("authorisation.errorStateTitle", comment: ""),
     authorisationPhoneFormat = NSLocalizedString("authorisation.phoneFormat", comment: ""),
-    
+    incorrectCode = NSLocalizedString("authorisation.incorrectCode", comment: ""),
+    requestCodeAgain = NSLocalizedString("authorisation.requestCodeAgain", comment: ""),
+    secondShort = NSLocalizedString("authorisation.secondShort", comment: ""),
+
     fontsMontserrat = NSLocalizedString("fonts.montserrat", comment: ""),
     
     mainMovingTendTitle = NSLocalizedString("main.movingTrendTitle", comment: ""),

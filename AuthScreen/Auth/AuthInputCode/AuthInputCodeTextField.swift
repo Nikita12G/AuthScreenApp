@@ -42,7 +42,7 @@ struct AuthInputCodeTextField: View {
                 .foregroundColor(.clear)
                 .accentColor(.clear)
                 .textContentType(.oneTimeCode)
-                .onChange(of: code) { newValue in
+                .onChange(of: code) { _, newValue in
                     let filtered = newValue.filter { $0.isNumber }
                     if filtered.count <= 4 {
                         code = filtered

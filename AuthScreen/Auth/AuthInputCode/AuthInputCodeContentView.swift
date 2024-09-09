@@ -26,30 +26,32 @@ struct AuthInputCodeContentView: View {
             VStack {
                 Image("mailImage")
                     .padding(.top, 40)
-                
                 Text(phoneNumber)
                     .font(Fonts.montserrat(ofSize: 24))
                     .foregroundColor(Colors.White)
                     .padding(.top, 18)
-                
                 AuthInputCodeTextField(code: $inputCode, inputState: $inputState)
                     .padding(EdgeInsets(top: 24, leading: 24, bottom: 12, trailing: 24))
                     .focused($textFieldIsFocused)
-                    .onChange(of: inputCode) { _, _ in
+                    .onChange(of: inputCode) { _, newValue in
                         inputState = .regular
+                        if newValue.count == 4 && inputState != .error {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                router.navigate(to: .mainScreen)
+                            }
+                        }
                     }
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                             self.textFieldIsFocused = true
                         }
                     }
-                
-                Text("Неверный пароль")
+                Text(Constants.incorrectCode)
                     .font(Fonts.montserrat(ofSize: 14))
                     .foregroundColor(Colors.Red)
                     .hidden(inputState != .error)
                 
-                Text("Запросить повторно через \(confirmCodeTimer.counter) сек")
+                Text("\(Constants.requestCodeAgain) \(confirmCodeTimer.counter) \(Constants.secondShort)")
                     .font(Fonts.montserrat(ofSize: 14))
                     .foregroundColor(Colors.White)
                     .padding(.top, 15)
@@ -66,7 +68,7 @@ struct AuthInputCodeContentView: View {
                         inputState = .error
                     }
                 } label: {
-                    Text("Авторизоваться")
+                    Text(Constants.authorize)
                         .padding(14)
                 }
                 .frame(maxWidth: .infinity)

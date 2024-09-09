@@ -34,8 +34,11 @@ struct AuthInputPhoneContentView: View {
             
             AuthInputPhoneView(phoneNumber: $phoneNumber, inputState: $inputState)
                 .padding(EdgeInsets(top: 0, leading: 24, bottom: 24, trailing: 24))
-                .onChange(of: phoneNumber) { _, _ in
+                .onChange(of: phoneNumber) { _, newValue in
                     inputState = .regular
+                    if newValue.filter({ $0.isNumber }).count == 11 && inputState != .error {
+                        router.navigate(to: .inputCode)
+                    }
                 }
             
             Button {
