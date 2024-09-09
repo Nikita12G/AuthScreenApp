@@ -13,17 +13,36 @@ struct MainExternalView: View {
     private var allArticleCount: Int?
     private var topicsArticleCount: Int?
     private var progressValue: CGFloat?
+    private var isLoading: Bool
+    private var errorMessage: String?
     
-    init(topic: Binding<String>, topicsForNews: [String], allArticleCount: Int?, topicsArticleCount: Int?, progressValue: CGFloat?) {
+    init(topic: Binding<String>, topicsForNews: [String], allArticleCount: Int?, topicsArticleCount: Int?, progressValue: CGFloat?, isLoading: Bool, errorMessage: String?) {
         self._topic = topic
         self.topicsForNews = topicsForNews
         self.allArticleCount = allArticleCount
         self.topicsArticleCount = topicsArticleCount
         self.progressValue = progressValue
+        self.isLoading = isLoading
+        self.errorMessage = errorMessage
     }
     
     var body: some View {
         VStack {
+            if isLoading {
+                VStack(spacing: 20) {
+                    ProgressView()
+                        .frame(height: 50)
+                        .tint(Colors.White)
+                        .scaleEffect(2)
+                    Text("Loading...")
+                        .font(Fonts.montserrat(ofSize: 22))
+                        .foregroundStyle(Colors.White)
+                }
+            } else if let errorMessage = errorMessage {
+                Text(errorMessage)
+                    .font(Fonts.montserrat(ofSize: 18))
+                    .foregroundStyle(Colors.White)
+            }
             HStack {
                 Text(Constants.newsCount)
                     .foregroundStyle(Colors.White)
@@ -37,7 +56,8 @@ struct MainExternalView: View {
                     .onChange(of: topic) { _, newTopic in
                         topic = newTopic
                     }
-            }
+            }.hidden(isLoading || errorMessage != nil)
+
             HStack {
                 ZStack {
                     CirclePath()
@@ -91,7 +111,7 @@ struct MainExternalView: View {
                         }.padding(12)
                     }
                 }
-            }
+            }.hidden(isLoading || errorMessage != nil)
         }.padding(EdgeInsets(top: 20, leading: 20, bottom: 24, trailing: 20))
             .background(AuthGradientView())
             .cornerRadius(28)
