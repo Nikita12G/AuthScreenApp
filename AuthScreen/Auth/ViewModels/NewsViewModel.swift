@@ -38,7 +38,7 @@ class NewsViewModel: ObservableObject {
                 self?.articleList = articleList
                 let articleCount = CGFloat(articleList.articles?.count ?? 0)
                 let totalResults = CGFloat(articleList.totalResults ?? 1)
-                self?.progressValue = articleCount / totalResults
+                self?.progressValue = (articleCount * 10) / totalResults
             })
             .store(in: &cancellables)
     }

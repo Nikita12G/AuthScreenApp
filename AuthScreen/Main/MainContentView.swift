@@ -15,7 +15,6 @@ struct MainContentView: View {
     @State private var showChat = false
     @State private var targetTopic = "iOS 18"
     @StateObject private var newsViewModel = NewsViewModel()
-    @StateObject private var footballViewModel = FootballViewModel()
     
     var body: some View {
         VStack {
@@ -24,7 +23,7 @@ struct MainContentView: View {
                     .ignoresSafeArea()
                 VStack {
                     HStack(spacing: 24) {
-                        Text("\(Constants.statisticTitle) \(footballViewModel.teamStatistics?.response?.team?.name ?? "")")
+                        Text(Constants.statisticTitle)
                             .font(Fonts.montserrat(ofSize: 24))
                             .foregroundStyle(Colors.White)
                         Spacer()
@@ -47,7 +46,7 @@ struct MainContentView: View {
                                 .foregroundStyle(Colors.White)
                         })
                     }.padding(EdgeInsets(top: 30, leading: 20, bottom: 24, trailing: 24))
-                    MainChartDetailView(scoredGoals: footballViewModel.getScoredGoalsForMinutes(), missedGoals: footballViewModel.getMissedGoalsForMinutes(), goalsDifference: footballViewModel.getTotalGoalDifference(), isLoading: newsViewModel.isLoading, errorMessage: $newsViewModel.errorMessage)
+                    MainChartDetailView()
                     HStack {
                         MainContactsListView(isDetailList: true).hidden(!showWidgets)
                         VStack {
@@ -62,7 +61,6 @@ struct MainContentView: View {
                             }
                             .hidden(!showWidgets)
                             MainSupportView().hidden(!showWidgets)
-                                .scaleEffect(showChat ? 1.1 : 1.0)
                                 .opacity(showChat ? 0.2 : 1)
                                 .onTapGesture {
                                     withAnimation {
@@ -80,7 +78,6 @@ struct MainContentView: View {
         .background(Colors.DarkPurple)
         .task {
             newsViewModel.fetchArticles(targetTopic: targetTopic)
-            footballViewModel.fetchTeamStatistics(season: 2020, teamId: 33, leagueId: 39)
         }
         .sheet(isPresented: $showChat) {
             ChatContentView()
