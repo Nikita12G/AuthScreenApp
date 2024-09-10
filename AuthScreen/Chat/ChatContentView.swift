@@ -91,7 +91,7 @@ struct ChatContentView: View {
                 webSocketManager.disconnect()
             }
         }
-        .frame(width: 400, height: 600)
+        .frame(width: 400, height: 500)
         .background(Color.white)
         .cornerRadius(16)
         .shadow(radius: 10)
