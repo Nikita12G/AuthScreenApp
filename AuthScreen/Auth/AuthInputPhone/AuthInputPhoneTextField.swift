@@ -24,7 +24,7 @@ struct AuthInputPhoneTextField: View {
                 .font(Fonts.montserrat(ofSize: 16))
                 .foregroundColor(Colors.White)
                 .keyboardType(.numberPad)
-                .textContentType(.oneTimeCode) 
+                .textContentType(.telephoneNumber) 
                 .onChange(of: phoneNumber) { _, newValue in
                     phoneNumber = newValue.formatPhoneNumber()
                     self.text = newValue

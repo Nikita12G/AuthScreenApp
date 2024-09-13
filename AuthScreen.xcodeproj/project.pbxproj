@@ -72,7 +72,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1167EA52C89E63F004CF44A /* generateapis.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateapis.sh; sourceTree = "<group>"; };
 		A1167EA72C89E6D8004CF44A /* NewsAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NewsAPI; path = AuthScreen/NewsAPI; sourceTree = "<group>"; };
 		A1167EAE2C89EBD5004CF44A /* FootbalNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalNetworkServices.swift; sourceTree = "<group>"; };
 		A1167EDD2C89EF4F004CF44A /* FootballViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballViewModel.swift; sourceTree = "<group>"; };
@@ -227,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				A1167EA72C89E6D8004CF44A /* NewsAPI */,
-				A1167EA52C89E63F004CF44A /* generateapis.sh */,
 				A1DEE6A82C45034B0003733B /* AuthScreen */,
 				A1DEE6A72C45034B0003733B /* Products */,
 				0F854EF055517FCF5AB30C6E /* Pods */,
