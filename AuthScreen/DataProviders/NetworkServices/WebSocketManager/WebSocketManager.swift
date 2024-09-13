@@ -39,7 +39,7 @@ class WebSocketManager: ObservableObject, WebSocketDelegate {
         if reconnectAttempts < reconnectLimit {
             socket?.connect()
         } else {
-            print("Превышен лимит попыток переподключения.")
+            print("Reconnection attempt limit exceeded.")
         }
     }
     

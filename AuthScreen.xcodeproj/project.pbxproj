@@ -336,8 +336,8 @@
 			isa = PBXGroup;
 			children = (
 				A1F6AFBD2C8AFC4000DBDB60 /* WebSocketManager */,
-				A1E70B292C860712001DF6DD /* NewsNetworkServices.swift */,
 				A1167EAE2C89EBD5004CF44A /* FootbalNetworkServices.swift */,
+				A1E70B292C860712001DF6DD /* NewsNetworkServices.swift */,
 			);
 			name = NetworkServices;
 			path = DataProviders/NetworkServices;
