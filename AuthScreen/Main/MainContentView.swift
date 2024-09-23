@@ -9,12 +9,9 @@ import SwiftUI
 
 struct MainContentView: View {
     
-    @State private var statistic = Statistic()
     @State private var targetMonth = Date().month
     @State private var showWidgets = true
     @State private var showChat = false
-    @State private var targetTopic = "iOS 18"
-    @StateObject private var newsViewModel = NewsViewModel()
     
     var body: some View {
         VStack {
@@ -50,15 +47,7 @@ struct MainContentView: View {
                     HStack {
                         MainContactsListView(isDetailList: true).hidden(!showWidgets)
                         VStack {
-                            MainExternalView(
-                                topic: $targetTopic,
-                                topicsForNews: newsViewModel.topicsForNews,
-                                allArticleCount: newsViewModel.articleList?.totalResults,
-                                topicsArticleCount: newsViewModel.articleList?.articles?.count,
-                                progressValue: newsViewModel.progressValue, isLoading: newsViewModel.isLoading, errorMessage: $newsViewModel.errorMessage)
-                            .task(id: targetTopic) {
-                                newsViewModel.fetchArticles(targetTopic: targetTopic)
-                            }
+                            MainExternalView()
                             .hidden(!showWidgets)
                             MainSupportView().hidden(!showWidgets)
                                 .opacity(showChat ? 0.2 : 1)
@@ -70,15 +59,13 @@ struct MainContentView: View {
                         }
                     }
                 }
-                MainRightSideBar(statistic: _statistic, monthSelected: $targetMonth)
+                MainRightSideBar(monthSelected: $targetMonth)
                     .ignoresSafeArea()
                     .hidden(!showWidgets)
             }
         }
         .background(Colors.DarkPurple)
-        .task {
-            newsViewModel.fetchArticles(targetTopic: targetTopic)
-        }
+
         .sheet(isPresented: $showChat) {
             ChatContentView()
                 .presentationBackground(Colors.DarkPurple.opacity(0.2))

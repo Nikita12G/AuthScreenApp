@@ -35,7 +35,7 @@ struct AuthInputCodeContentView: View {
                     .focused($textFieldIsFocused)
                     .onChange(of: inputCode) { _, newValue in
                         inputState = .regular
-                        if newValue.count == 4 && inputState != .error {
+                        if newValue.count == 4 && codeIsValid(code: inputCode) {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                 router.navigate(to: .mainScreen)
                             }

@@ -10,7 +10,7 @@ import OpenAPIClient
 import Combine
 
 class NewsViewModel: ObservableObject {
-    @Published var topicsForNews = [ "iOS 18", "Meta", "Russia", "Marvel", "Paris"]
+    @Published var topicsForNews = [ "iOS 18", "Meta", "Russia", "Tesla", "Paris"]
     @Published var articleList: ArticleList?
     @Published var errorMessage: String?
     @Published var isLoading: Bool = false

@@ -9,11 +9,10 @@ import SwiftUI
 
 struct MainRightSideBar: View {
     
-    @State private var statistic: Statistic
+    @State private var statistic = Statistic()
     @Binding private var monthSelected: Int
 
-    init(statistic: State<Statistic>, monthSelected: Binding<Int>) {
-        self._statistic = statistic
+    init(monthSelected: Binding<Int>) {
         self._monthSelected = monthSelected
     }
     
