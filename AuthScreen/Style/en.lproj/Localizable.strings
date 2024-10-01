@@ -1,0 +1,19 @@
+/*
+  LocalizableEN.strings
+  AuthScreen
+
+  Created by Никита Гуляев on 31.07.2024.
+  
+*/
+"fonts.montserrat" = "Montserrat";
+
+"authorisation.title" = "Autorisation";
+"authorisation.subTitle" = "Login by phone number";
+"authorisation.requestTitle" = "Request code";
+"authorisation.phoneMask" = "+7 (___) ___-__-__";
+"authorisation.errorStateTitle" = "Incorrect number format";
+"authorisation.phoneFormat" = "+X (XXX) XXX-XX-XX";
+
+"main.movingTrendTitle" = "Moving Trend in 2024";
+"main.contactsTitle" = "Contact numbers";
+"main.month" = "Month";
