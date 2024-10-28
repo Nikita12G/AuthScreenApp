@@ -1,0 +1,6 @@
+framework module Pods_AuthScreen {
+  umbrella header "Pods-AuthScreen-umbrella.h"
+
+  export *
+  module * { export * }
+}
