@@ -7,18 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1DEE6AA2C45034B0003733B /* AuthScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6A92C45034B0003733B /* AuthScreenApp.swift */; };
-		A1DEE6AC2C45034B0003733B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6AB2C45034B0003733B /* ContentView.swift */; };
-		A1DEE6AE2C45034C0003733B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6AD2C45034C0003733B /* Assets.xcassets */; };
+		A1512E622C5A6B0000860F0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1512E612C5A6B0000860F0C /* Constants.swift */; };
+		A1512E722C5A81EA00860F0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1512E742C5A81EA00860F0C /* Localizable.strings */; };
 		A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */; };
+		A1DEE6E92C4505200003733B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6D62C45051F0003733B /* Helpers.swift */; };
+		A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */; };
+		A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DE2C4505200003733B /* AuthInputPhoneContentView.swift */; };
+		A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6DF2C4505200003733B /* AuthInputPhoneTextField.swift */; };
+		A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E02C4505200003733B /* AuthInputPhoneView.swift */; };
+		A1DEE6F02C4505200003733B /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E12C4505200003733B /* AuthRouter.swift */; };
+		A1DEE6F12C4505200003733B /* AuthGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E22C4505200003733B /* AuthGradientView.swift */; };
+		A1DEE6F22C4505200003733B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DEE6E42C4505200003733B /* Assets.xcassets */; };
+		A1DEE6F32C4505200003733B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E52C4505200003733B /* Fonts.swift */; };
+		A1DEE6F42C4505200003733B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E62C4505200003733B /* Colors.swift */; };
+		A1DEE6F52C4505200003733B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DEE6E82C4505200003733B /* Extensions.swift */; };
+		A1E22C052C59257100D3BA9C /* InputViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E22C042C59257100D3BA9C /* InputViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1512E612C5A6B0000860F0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A1512E732C5A81EA00860F0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A1512E762C5A825200860F0C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A1DEE6A62C45034B0003733B /* AuthScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1DEE6A92C45034B0003733B /* AuthScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreenApp.swift; sourceTree = "<group>"; };
-		A1DEE6AB2C45034B0003733B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A1DEE6AD2C45034C0003733B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1DEE6D62C45051F0003733B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreenApp.swift; sourceTree = "<group>"; };
+		A1DEE6DE2C4505200003733B /* AuthInputPhoneContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputPhoneContentView.swift; sourceTree = "<group>"; };
+		A1DEE6DF2C4505200003733B /* AuthInputPhoneTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputPhoneTextField.swift; sourceTree = "<group>"; };
+		A1DEE6E02C4505200003733B /* AuthInputPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInputPhoneView.swift; sourceTree = "<group>"; };
+		A1DEE6E12C4505200003733B /* AuthRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		A1DEE6E22C4505200003733B /* AuthGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthGradientView.swift; sourceTree = "<group>"; };
+		A1DEE6E42C4505200003733B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1DEE6E52C4505200003733B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		A1DEE6E62C4505200003733B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A1DEE6E82C4505200003733B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A1E22C042C59257100D3BA9C /* InputViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +74,11 @@
 		A1DEE6A82C45034B0003733B /* AuthScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A1DEE6A92C45034B0003733B /* AuthScreenApp.swift */,
-				A1DEE6AB2C45034B0003733B /* ContentView.swift */,
-				A1DEE6AD2C45034C0003733B /* Assets.xcassets */,
+				A1DEE6DB2C4505200003733B /* Auth */,
+				A1DEE6E72C4505200003733B /* Exstentions */,
+				A1DEE6D52C45051F0003733B /* Helpers */,
+				A1E22C032C59255A00D3BA9C /* Models */,
+				A1DEE6E32C4505200003733B /* Style */,
 				A1DEE6AF2C45034C0003733B /* Preview Content */,
 			);
 			path = AuthScreen;
@@ -65,6 +90,64 @@
 				A1DEE6B02C45034C0003733B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1DEE6D52C45051F0003733B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A1DEE6D62C45051F0003733B /* Helpers.swift */,
+				A1512E612C5A6B0000860F0C /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A1DEE6DB2C4505200003733B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A1DEE6DC2C4505200003733B /* AuthScreenApp.swift */,
+				A1DEE6DD2C4505200003733B /* AuthInputPhone */,
+				A1DEE6E12C4505200003733B /* AuthRouter.swift */,
+				A1DEE6E22C4505200003733B /* AuthGradientView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A1DEE6DD2C4505200003733B /* AuthInputPhone */ = {
+			isa = PBXGroup;
+			children = (
+				A1DEE6DE2C4505200003733B /* AuthInputPhoneContentView.swift */,
+				A1DEE6DF2C4505200003733B /* AuthInputPhoneTextField.swift */,
+				A1DEE6E02C4505200003733B /* AuthInputPhoneView.swift */,
+			);
+			path = AuthInputPhone;
+			sourceTree = "<group>";
+		};
+		A1DEE6E32C4505200003733B /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				A1DEE6E42C4505200003733B /* Assets.xcassets */,
+				A1DEE6E52C4505200003733B /* Fonts.swift */,
+				A1DEE6E62C4505200003733B /* Colors.swift */,
+				A1512E742C5A81EA00860F0C /* Localizable.strings */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		A1DEE6E72C4505200003733B /* Exstentions */ = {
+			isa = PBXGroup;
+			children = (
+				A1DEE6E82C4505200003733B /* Extensions.swift */,
+			);
+			path = Exstentions;
+			sourceTree = "<group>";
+		};
+		A1E22C032C59255A00D3BA9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1E22C042C59257100D3BA9C /* InputViewState.swift */,
+			);
+			name = Models;
+			path = Style/Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +192,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = A1DEE69D2C45034B0003733B;
 			productRefGroup = A1DEE6A72C45034B0003733B /* Products */;
@@ -125,8 +209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1512E722C5A81EA00860F0C /* Localizable.strings in Resources */,
+				A1DEE6F22C4505200003733B /* Assets.xcassets in Resources */,
 				A1DEE6B12C45034C0003733B /* Preview Assets.xcassets in Resources */,
-				A1DEE6AE2C45034C0003733B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +222,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DEE6AC2C45034B0003733B /* ContentView.swift in Sources */,
-				A1DEE6AA2C45034B0003733B /* AuthScreenApp.swift in Sources */,
+				A1DEE6F02C4505200003733B /* AuthRouter.swift in Sources */,
+				A1DEE6F42C4505200003733B /* Colors.swift in Sources */,
+				A1DEE6ED2C4505200003733B /* AuthInputPhoneContentView.swift in Sources */,
+				A1DEE6EE2C4505200003733B /* AuthInputPhoneTextField.swift in Sources */,
+				A1E22C052C59257100D3BA9C /* InputViewState.swift in Sources */,
+				A1DEE6EF2C4505200003733B /* AuthInputPhoneView.swift in Sources */,
+				A1DEE6F12C4505200003733B /* AuthGradientView.swift in Sources */,
+				A1DEE6EC2C4505200003733B /* AuthScreenApp.swift in Sources */,
+				A1DEE6E92C4505200003733B /* Helpers.swift in Sources */,
+				A1DEE6F32C4505200003733B /* Fonts.swift in Sources */,
+				A1DEE6F52C4505200003733B /* Extensions.swift in Sources */,
+				A1512E622C5A6B0000860F0C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1512E742C5A81EA00860F0C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1512E732C5A81EA00860F0C /* en */,
+				A1512E762C5A825200860F0C /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A1DEE6B22C45034C0003733B /* Debug */ = {
@@ -280,6 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
